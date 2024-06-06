@@ -15,4 +15,4 @@ Keeping strict boundaries on my time will help to get the work done on or very n
 
 
 ## Leetcode 1 hour
-![image](./leetcode1.png)
+![image](./images/leetcode1.png)
