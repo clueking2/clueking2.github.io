@@ -1,4 +1,4 @@
-Weekly Update 2 5/27/24
+# Weekly Update 2 5/27/24
 
 ## What did you do last week?
 I looked into possible ideas for projects for the semester. I came up with a combo project of practicing leetcode coding problems
