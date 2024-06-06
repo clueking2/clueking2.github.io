@@ -12,3 +12,7 @@ some extra time I have set aside for projects in this class.
 
 ## How can I make the process work better?
 Keeping strict boundaries on my time will help to get the work done on or very nearly on schedule. Moving the Leetcode problem to earlier in the week might help with time management.
+
+
+## Leetcode 1 hour
+![image](./leetcode1.png)
