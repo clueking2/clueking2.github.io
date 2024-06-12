@@ -7,3 +7,7 @@ This section is about exploring the software development field via learning new 
 
 ## Leetcode Coding Practice
 To bolster interview coding skills, I plan to complete one Leetcode problem a week, pertaining to common interview topics in coding interviews. This is to help build up my coding ability for my current understanding of computer science topics.
+
+### How to get to ...
+
+[An Internal Link](./Weekly_Update_5_20_24.md)
