@@ -16,4 +16,4 @@ To bolster interview coding skills, I plan to complete one Leetcode problem a we
 [Week 4](./Weekly_Update_6_10_24.md) |
 [Week 5](./Weekly_Update_6_17_24.md) |
 [Week 6](./Weekly_Update_6_24_24.md) |
-[Week 7](./Weekly_Update_7_7_24.md)
+[Week 7](./Weekly_Update_7_1_24.md)
