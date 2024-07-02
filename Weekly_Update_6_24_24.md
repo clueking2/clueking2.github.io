@@ -13,5 +13,5 @@ No, I am actually back on track with finishing my course by the end of week 6/7 
 Keeping the Leetcode problem earlier in the week continues to help with time management. I do not need an updated timeline for finishing the LinkedIn Learning course and starting the project as I am roughly on schedule. Once this week is over, I will turn my focus fully to the website project. 
 
 
-## Leetcode 28 minutes 
+## Leetcode 30 minutes 
 ![image](./images/leetcode4.png)
