@@ -13,5 +13,5 @@ I have some other pressing work in a class that is taking longer than expected, 
 Keeping the Leetcode problem earlier in the week continues to help with time management. Alternating days working on the other class I am in and this one may help me make sure I keep on top of items for each class. Making sure to have 50 to 75% of the work for the week done before the weekend will help keep me on track as well.
 
 
-## Leetcode 30 minutes 
+## Leetcode 27 minutes 
 ![image](./images/leetcode5.png)
