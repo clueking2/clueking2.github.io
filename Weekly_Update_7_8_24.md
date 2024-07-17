@@ -16,8 +16,8 @@ Alternating days working on the other class I am in and this one helps me make s
 
 
 ## Leetcode 22 minutes 
-![image](./images/leetcode7.png)
+![image](./images/leetcode6.png)
 
 
 ## Project Code Update: Homepage HTML
-![image](./images/projectcode2.png)
+![image](./images/projectcode1.png)
