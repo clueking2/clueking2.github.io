@@ -19,5 +19,5 @@ Figuring out a solution for the footer issue may require some out of the box thi
 ![image](./images/leetcode8.png)
 
 
-## Project Code Update: Homepage HTML
+## Project Code Update: Part of Race Information Page HTML
 ![image](./images/projectcode3.png)
