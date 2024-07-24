@@ -15,7 +15,7 @@ The footer issue with the landing page is proving to be challenging due to when 
 Figuring out a solution for the footer issue may require some out of the box thinking, but if I ponder the problem over a couple of days, I think I will come up with some sort of solution.
 
 
-## Leetcode 37 minutes 
+## Leetcode 25 minutes 
 ![image](./images/leetcode8.png)
 
 
