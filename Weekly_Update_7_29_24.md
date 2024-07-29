@@ -15,7 +15,7 @@ The footer was difficult to fix, but I moved past it!
 Wrapping up the project and reflecting on what I have learned in preparation for the final report might be helpful.
 
 
-## Leetcode 33 minutes 
+## Leetcode 15 minutes 
 ![image](./images/leetcode9.png)
 
 
