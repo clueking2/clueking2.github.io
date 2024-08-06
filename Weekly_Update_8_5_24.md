@@ -18,5 +18,5 @@ Continuing to keep up with current HTML and CSS trends as well as working on the
 
 
 ## Project Code Update: Links to Completed Pages
-[Homepage](./code/index1.html)
-[Race Info Page](./code/raceinfo.html)
+[Homepage Code](./code/index1.html)
+[Race Info Page Code](./code/raceinfo.html)
