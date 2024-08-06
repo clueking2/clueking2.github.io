@@ -22,4 +22,6 @@ To bolster interview coding skills, I plan to complete one Leetcode problem a we
 [Week 8](./Weekly_Update_7_8_24.md) |
 [Week 9](./Weekly_Update_7_15_24.md) |
 [Week 10](./Weekly_Update_7_22_24.md) |
-[Week 11](./Weekly_Update_7_29_24.md)
+[Week 11](./Weekly_Update_7_29_24.md) |
+[Week 12](./Weekly_Update_8_5_24.md) |
+[Final Project Report](./Final_Project_Report.md)
