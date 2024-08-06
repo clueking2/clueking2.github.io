@@ -1,0 +1,240 @@
+/* Color Palette 
+--khaki: #a49e8dff;
+--taupe: #504136ff;
+--cambridge-blue: #689689ff;
+--tiffany-blue: #b2e6d4ff;
+--rose-pompadour: #e07b91ff;
+*/
+
+/* GLOBAL STYLES 
+---------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #a49e8dff;
+    color: #504136ff;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100; 
+    overflow-y: hidden;  /* Hide vertical overflow on body */
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    background-color: #a49e8dff;
+}
+
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+h1 {
+    color: #b2e6d4ff;
+    font-size: 7rem;
+    line-height: 0.85;
+    text-align: center;
+}
+
+h2 {
+    color: #b2e6d4ff;
+    font-size: 3.6rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+/* HOME
+---------------------------------*/
+.home {
+    background: url(./mountainsunsplash.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+
+
+.overlay-box {
+    background-color: #504136ff; /* Adjust color and opacity as needed */
+    color: #b2e6d4ff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px; /* Optional: for rounded corners */
+    max-width: 80%; /* Adjust width as needed */
+    margin: auto; /* Center the box horizontally */
+    position: relative;
+}
+
+.text-block {
+    color: #504136;
+    padding: 40px;
+    background-color: #a49e8dff; 
+    border-radius: 10px; 
+}
+
+.button {
+    background:  #e07b91;
+    border: none;
+    color: #b2e6d4ff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem; /* Increased font size */
+    padding: 15px 30px;
+    border-radius: 50px; /* Rounded corners */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background:  #e07b91;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.content-bg {
+    background: #504136ff;
+    padding: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/* Info Page
+---------------------------------*/
+.bold {
+    font-weight: bold;
+}
+
+.scrollable {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.imagecontainer {
+    text-align: center;
+    padding: 20px;
+}
+
+.small-image {
+    width: 200px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    text-align: center;
+}
+
+.medium-image {
+    width: 400px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    text-align: center;
+}
+
+/* FOOTER
+---------------------------------*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #504136;
+    color: #b2e6d4ff;
+    /* position: relative; */
+    width: 100%;
+}
+
+.footer a {
+    color: #e07b91ff; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #b2e6d4ff; 
+}
+
