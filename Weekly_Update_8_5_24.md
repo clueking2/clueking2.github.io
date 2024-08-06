@@ -18,4 +18,5 @@ Continuing to keep up with current HTML and CSS trends as well as working on the
 
 
 ## Project Code Update: Links to Completed Pages
-![image](./images/projectcode5.png)
+[Homepage](./code/index1.html)
+[Race Info Page](./code/raceinfo.html)
