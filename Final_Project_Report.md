@@ -3,9 +3,9 @@
 ## Goals From Project:
 1. Explore the software development field by taking a LinkedIn Learning course, "Becoming a Software Developer". Three sections within the course will be done per week, with the goal of completing the whole course by Week 5.
    
-2. Complete one Leetcode problem per week related to technical interview topics. There will be a screenshot of the completed code and the amont of time it took to complete the problem. The goal is to take 1/4 less time to complete the problem than at the beginning of the semester.
+2. Complete one Leetcode problem per week related to technical interview topics. There will be a screenshot of the completed code and the amount of time it took to complete the problem. The goal is to take 1/4 less time to complete the problem than at the beginning of the semester.
    
-3. The final programming project will be started after the completeing of the LinkedIn Learning course or by the end of Week 6, whichever comes first. It will be finished by the end of Week 11, with the final project report being the last thing completed. As code gets working, it will be posted within the weekly updates.
+3. The final programming project will be started after the completing of the LinkedIn Learning course or by the end of Week 6, whichever comes first. It will be finished by the end of Week 11, with the final project report being the last thing completed. As code gets working, it will be posted within the weekly updates.
    
 4. Weekly Updates will be posted every week by Wednesday evening.
 
