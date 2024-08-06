@@ -18,7 +18,8 @@ Continuing to keep up with current HTML and CSS trends as well as working on the
 
 
 ## Project Code Update: Links to Completed Pages
-[Homepage Code](./code/index1.html) |
-[Race Info Page Code](./code/raceinfo.html) |
-[Homepage Site Page](./index1.html) |
-[Race Info Site Page](./raceinfo.html)
+[Homepage Code](./code/index1.html) * |
+[Race Info Page Code](./code/raceinfo.html) *
+
+* To open the pages, download the files and double click in your Downloads folder
+
