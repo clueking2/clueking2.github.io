@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume | Claire Lueking | Applied Computer Science Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="resume">
+    <a class="btn download-link" href="Claire_Lueking_Resume_2024_1.pdf">Download PDF</a>
+    <!-- //  INTRO  // -->
+    <header>
+      <div class="content-wrapper">
+      <!-- Start content edits below this line. -->
+      <h1>Claire Lueking</h1>
+      <h2>Applied Computer Science Student</h2>
+
+      <!-- End content edits here. -->
+      </div>
+    </header>
+
+    <main class="content-wrapper">
+      <!-- //  PROFILE  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line. -->
+        <h2>Profile</h2>
+            <p>Claire Lueking is passionate about the intersection of technology, user experience, and design. She thrives on problem-solving and creating seamless, user-friendly digital experiences. With a deep appreciation for the outdoors and an active lifestyle, she enjoys pushing her limits through CrossFit and outdoor adventures, always seeking new challenges both physically and intellectually.
+    
+    She earned her Bachelor's in Integrative Physiology at the University of Colorado Boulder and is now pivoting into the tech industry by pursuing a degree in Applied Computer Science at the University of Colorado Boulder. Her passion for intuitive design and user experience emerged through coding in Python and HTML, as well as creating visually engaging designs using Canva and Figma.
+    
+    Claire is actively pursuing opportunities in UX/UI design, computer science, and software engineering, where she can combine her technical expertise with her passion for crafting engaging, user-centered experiences.</p>
+        <a href="home.html">Back to homepage</a>
+
+        <!-- End content edits here. -->
+      </section>
+
+      <!-- //  PROJECTS  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line. -->
+        <h2>Projects</h2>
+        
+        <div class="project-wrapper">
+          <!-- To add more items, copy this whole <section></section> block-->
+          <section class="project-item">
+            <img src="./images/jukebox_project_500px.png" srcset="./images/jukebox_project_500px.png 1x, ./images/jukebox_project_1000px.png 2x" alt="General overview of the project with a video walkthrough link and a description of the data structures used" width="500" height="464">
+            <h3>Making a Jukebox</h3>
+            <p>This project makes a music-playing machine called a Jukebox that has multiple features including pause, play, skip to the first track of the current playlist, repeat all the playlists, and more. This project utilizes the data structures of doubly and circularly linked lists. I created this project to submit for my Data Structures course for the Applied Computer Science program at the University of Colorado Boulder. </p>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/clueking2/Jukebox" target="_blank">Jukebox Project</a>
+          </section>
+
+          <section class="project-item">
+            <img src="./images/ultrainsight_project_500px.png" srcset="./images/ultrainsight_project_500px.png 1x, ./images/ultrainsight_project_1000px.png 2x" alt="Ultrainsight project presentation page" width="500" height="280">
+            <h3>UltraInsight: Analyzing Paces, Ages, and Trends in Ultramarathon Finishers</h3>
+            <p>This project aims to answer four questions related to ultramarathon racing and training. Through data analysis these questions are answered and there are even some additional information gained secondary to the questions answered. I created this project as a semester project for my Data Mining course in the Applied Computer Science program at the University of Colorado Boulder.</p>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/clueking2/UltraInsight_Analyzing_Paces_Ages_and_Trends_in_Ultramarathon_Finishers" target="_blank">UltraInsight Project</a>
+          </section>
+
+          <section class="project-item">
+            <img src="./images/rsa_project_500px.png" srcset="./images/rsa_project_500px.png 1x, ./images/rsa_project_1000px.png 2x" alt="Overview page of the outline of the RSA project" width="500" height="384">
+            <h3>RSA Encryption </h3>
+            <p>The RSA Project is a project from my Discrete Structures course in the Applied Computer Science program at the University of Colorado Boulder. This project uses RSA encryption to break codes and building the tools needed to use RSA to encode and decode coded messages.</p>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/clueking2/RSA_Project" target="_blank">RSA Project</a>
+          </section>
+        </div>
+        <!-- End content edits here. -->
+      </section>
+
+      <!-- //  WORK EXPERIENCE  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line.  -->
+        <h2>Work Experience</h2>
+        <p>My complete work history can be found on <a href="https://www.linkedin.com/in/clairelueking/" target="_blank">LinkedIn</a>.</p>
+
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Climbing Gym Attendant</h3>
+            <p>University of Colorado Boulder</p>
+            <p>2024 - 2024</p>
+          </div>
+
+          <div class="work-summary">
+            <ul>
+              <li>Monitored well-being of customers within the gym and enforced safety precautions for climbing</li>
+              <li>Assessed climbers for knowledge and afety on top rope, lead climbing and belyaing, and auto belay</li>
+              <li>Assisted with cleaning and renting outdoor gear to customers</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Women in Computing Social Director</h3>
+            <p>University of Colorado Boulder</p>
+            <p>2023 - 2024</p>
+          </div>
+          <div class="work-summary">
+            <ul>
+              <li>Fostered meaningful relationships with fellow women in cmputer science through bi-semester networking events</li>
+              <li>Lead planning and facilitation of meetings and events</li>
+              <li>Learned about recent computer science practices through career workshops and industry days by attending professional development events</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Society of Women Engineers Outreach Committee Member</h3>
+            <p>University of Colorado Boulder</p>
+            <p>2023 - 2024</p>
+          </div>
+          <div class="work-summary">
+            <ul>
+              <li>Actively engaged in a dynamic network of women in engineering, attending various networking events per semester</li>
+              <li>Enhanced industry insights by participating in bi-semester professional development events</li>
+              <li>Championed empowerment by organizing and participating in outreach events for women and girls in STEM</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Owner/CEO</h3>
+            <p>Polaris Performance LLC</p>
+            <p>2021 - 2022</p>
+          </div>
+          <div class="work-summary">
+            <ul>
+              <li>Guided personal training clients towards their fitness goals and bolsterd their self-assurance through online coaching</li>
+              <li>Orchestrated business operations from licensure and legal compliance to continuing education, social media management, and web design</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- End content edits here. -->
+      </section>
+
+      <!-- //  EDUCATION & CERTIFICATIONS  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line.  -->
+        <h2>Education</h2>
+
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="education-item">
+          <h3>University of Colorado Boulder - Boulder, CO</h3>
+          <p>B.S. Applied Computer Science, 2023 - 2025</p>
+          <!-- <p>Summary or accomplishments.</p> -->
+        </section>
+
+        <section class="education-item">
+          <h3>Univeristy of Colorado Boulder - Boulder, CO</h3>
+          <p>B.A. Integrative Physiology, 2019 - 2023</p>
+          <p>• Four Year Academic Merit Scholarship at University of Colorado Boulder</p>
+          <p>• Minor in Sociology</p>
+        </section>
+
+        <section class="education-item">
+          <h3>IBM</h3>
+          <p>DevOps and Software Engineering Professional Certificate, 2023-2023</p>
+          <p>• Studied and managed the Software Development Lifecycle (SDLC) through various hands-on labs </p>
+          <p>• Created coding projects with Kanban boards, CI/CD pipelines, Kubernetes, Docker, Microservices, and
+            Application Security through Python and Linux based projects on GitHub </p>
+          <p>• Courses: DevOps, Cloud Computing, Software Engineering, Agile Development, Linux, Python, Git,
+            TDD, Containers, Microservices, and CI/CD. </p>
+          </p>
+        </section>
+
+        <!-- End content edits here. -->
+      </section>
+    </main>
+
+    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+    <!-- Start content edits below this line. -->
+    <p>© 2024 by Claire Lueking | <a href="mailto:email@example.com">clairelueking@gmail.com</a></p>
+
+    <!-- Add or remove any networks. -->
+    <ul class="socials">
+    <li>
+      <a href="https://github.com/clueking2" target="_blank">Github</a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/clairelueking" target="_blank">LinkedIn</a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=100009645136528" target="_blank">Facebook</a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/claire.lueking/" target="_blank">Instagram</a>
+    </li>
+    </ul>
+    
+      <!-- End content edits here. -->
+    </footer>
+  </body>
+</html>
