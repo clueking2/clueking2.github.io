@@ -41,6 +41,8 @@ p {
 }
 
 .icons {
-    width: 20px;
-    height: 20px;
+    display: inline-block;
+    padding-left: 30px; /* Adjust padding to match icon size */
+    /* background: url('icon.png') no-repeat left center; */
+    background-size: 20px 20px;
 } 
