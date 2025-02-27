@@ -43,6 +43,7 @@ body {
 h1 {
     font: Inter;
     color: #0e0f19ff;
+    text-align: center;
 }
 
 h2 {
