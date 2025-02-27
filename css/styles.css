@@ -28,14 +28,16 @@
 
 html, body {
     height: 100%;
-    margin: 10px;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* Centers the content horizontally */
+    justify-content: flex-start;   /* Centers the content horizontally */
     align-items: center;
+    flex-grow: 1; 
 }
 
 h1 {
@@ -66,20 +68,10 @@ p {
     object-fit: contain;
 } 
 
+
 .button {
     width: 100px;
-    height: 30px;
-    object-fit: contain;
-    background-color: #ae6147ff;
-    color: #f1f2f6ff;
-    box-shadow: 0 8px 16px 0;
-    /* border-color: #466060ff; */
-    border-radius: 6px;
-} 
-
-.button:hover {
-    width: 100px;
-    height: 30px;
+    height: 40px;
     object-fit: contain;
     background-color: #3ea38bff;
     color: #f1f2f6ff;
@@ -88,26 +80,69 @@ p {
     border-radius: 6px;
 } 
 
+.button:hover {
+    width: 100px;
+    height: 40px;
+    object-fit: contain;
+    background-color: #ae6147ff;
+    color: #f1f2f6ff;
+    box-shadow: 0 8px 16px 0;
+    /* border-color: #466060ff; */
+    border-radius: 6px;
+} 
+
+.pdf-button {
+    position: fixed;   /* Fixes the button in place */
+    top: 10px;          /* Positions it 10px from the top of the page */
+    left: 10px;  
+    width: 100px;
+    height: 40px;
+    /* object-fit: contain; */
+    background-color: #3ea38bff;
+    color: #f1f2f6ff;
+    box-shadow: 0 8px 16px 0;
+    /* border-color: #466060ff; */
+    border-radius: 6px;
+} 
+.pdf-button:hover {
+    position: fixed;   /* Fixes the button in place */
+    top: 10px;          /* Positions it 10px from the top of the page */
+    left: 10px;  
+    width: 100px;
+    height: 40px;
+    /* object-fit: contain; */
+    background-color: #ae6147ff;
+    color: #f1f2f6ff;
+    box-shadow: 0 8px 16px 0;
+    /* border-color: #466060ff; */
+    border-radius: 6px;
+} 
 .resume-section {
     border: 2px solid #466060ff; /* Border color and thickness */
     padding: 10px; /* Space between the content and the border */
     margin: 10px 10px; /* Space around the box */
     border-radius: 8px; /* Optional: rounded corners */
     background-color: #f1f2f6ff; /* Optional: background color */
+    max-height: 70vh;
 }
+
 .centered-content {
     display: grid;
     place-items: center;  /* Centers both horizontally and vertically */
     height: 60px;
   }
+
 .centered-container {
   display: grid;
   place-items: center;  /* Centers both horizontally and vertically */
-  height: 200px;
+  height: auto;  /* Adjust for flexible height */
+  overflow-y: auto; /* Allow vertical scroll if necessary */
 }
 
 .footer {
   text-align: center;
   padding: 20px;
   margin-top: auto; 
+  height: auto;  /* Adjust for flexible height */
+  overflow-y: auto; /* Allow vertical scroll if necessary */
 }
