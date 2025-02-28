@@ -48,6 +48,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #0e0f19ff;
+    overflow-x: hidden;
 }
 
 p {
@@ -104,12 +105,18 @@ h3 {
 
 /* Navbar container */
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     background-color: #466060ff;
     font-family: Caveat;
     position: fixed;
-    top: 0px;
-    right: 16px;
+    top: 5px;
+    right: 30px;
+    width: auto;
+    z-index: 100;
+    display: flex; /* Change float-based layout to flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px;
+    
   }
   
   /* Links inside the navbar */
@@ -124,8 +131,8 @@ h3 {
   
   /* The dropdown container */
   .dropdown {
-    float: left;
-    overflow: hidden;
+    position: relative;
+    z-index: 1001;
   }
   
   /* Dropdown button */
@@ -136,15 +143,18 @@ h3 {
     color: #f1f2f6ff;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: 'Caveat';
+    font-weight: 700;
+    cursor: pointer;
+    /* font-family: inherit; Important for vertical align on mobile phones */
+    /* margin: 0px; Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
+  /* Add a background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #3ea38bff;
   }
-  
+
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
@@ -152,18 +162,28 @@ h3 {
     background-color: #f1f2f6ff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #0e0f19ff;
-    z-index: 1;
-  }
+    z-index: 1002;
+    font-family: 'Patrick Hand';
+    font-weight: 700;
+    top: 100%;
+    right: 0px;
+    padding: 0px; /* Remove extra padding */
+    overflow: visible; /* Ensure the content is visible */
+    flex-direction: column; /* Ensure vertical stacking */
+}
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    float: none;
     color: #0e0f19ff;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: block;  /* Ensures each item is a block-level element */
     text-align: left;
-  }
+    font-family: 'Patrick Hand';
+    font-weight: 700;
+    width: 100%; /* Ensure links fill the width of the dropdown */
+    box-sizing: border-box;
+}
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
@@ -173,6 +193,7 @@ h3 {
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+    
   }
 
 
