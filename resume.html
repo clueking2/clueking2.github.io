@@ -8,18 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
+  <body>
   <body class="resume">
     <button type="button" class="pdf-button" onclick="window.location.href='./Lueking_Resume_2025_UIUX.pdf'">Download PDF</button>
     <!-- //  INTRO  // -->
     <header>
       <div class="content-wrapper">
       <h1>Claire Lueking</h1>
-      <h1>Applied Computer Science Student & UI/UX Designer</h1>
+      <h2>Applied Computer Science Student & UI/UX Designer</h2>
       </div>
     </header>
+
+     <!-- //  NAV BAR  // -->
+     <div class="navbar">
+      <a href="./about.html">About Me</a>
+      <a href="./resume.html">Resume</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./project1.html">Project 1</a>
+          <a href="./project2.html">Project 2</a>
+          <a href="./project3.html">Project 3</a>
+        </div>
+      </div>
+    </div>
 
     <main class="content-wrapper">
       <!-- //  PROFILE  // -->
@@ -100,7 +117,6 @@
             <p>University of Colorado Boulder</p>
             <p>2024 - 2024</p>
           </div>
-
           <div class="work-summary">
             <ul>
               <li>Monitored well-being of customers within the gym and enforced safety precautions for climbing</li>
@@ -194,5 +210,6 @@
         <p>© 2025 by Claire Lueking </p>
       </div>
     </footer>
+  </body>
   </body>
 </html>

@@ -50,6 +50,13 @@ body {
     color: #0e0f19ff;
 }
 
+p {
+    font-family: 'Patrick Hand';
+    font-weight: 700;
+    color: #0e0f19ff;
+    /* padding: 20px; */
+}
+
 .img-container {
     text-align: center;  /* Centers the image horizontally */
 }
@@ -81,12 +88,6 @@ h3 {
     color: #ae6147ff;
 }
 
-
-p {
-    font: Caveat;
-    color: #0e0f19ff;
-    padding: 20px;
-}
 
 .icon {
     width: 50px;
@@ -184,6 +185,8 @@ p {
     box-shadow: 0 8px 16px 0;
     /* border-color: #466060ff; */
     border-radius: 6px;
+    font-family: 'Patrick Hand';
+    font-weight: 700;
 } 
 
 .button:hover {
@@ -209,6 +212,8 @@ p {
     box-shadow: 0 8px 16px 0;
     /* border-color: #466060ff; */
     border-radius: 6px;
+    font-family: 'Patrick Hand';
+    font-weight: 700;
 } 
 .pdf-button:hover {
     position: fixed;   /* Fixes the button in place */
@@ -229,7 +234,7 @@ p {
     margin: 10px 10px; /* Space around the box */
     border-radius: 8px; /* Optional: rounded corners */
     background-color: #f1f2f6ff; /* Optional: background color */
-    max-height: 70vh;
+    max-height: 80vh;
 }
 
 .centered-content {
