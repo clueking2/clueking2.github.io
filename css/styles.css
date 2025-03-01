@@ -55,7 +55,7 @@ p {
     font-family: 'Patrick Hand';
     font-weight: 700;
     color: #0e0f19ff;
-    /* padding: 20px; */
+    padding: 10px;
 }
 
 .img-container {
@@ -256,6 +256,18 @@ h3 {
     border-radius: 8px; /* Optional: rounded corners */
     background-color: #f1f2f6ff; /* Optional: background color */
     max-height: 80vh;
+}
+.value-section {
+    border: 2px solid #466060ff; /* Border color and thickness */
+    padding: 1px 10px 1px 10px; /* Space between the content and the border */
+    margin: 10px 300px 100px 300px; /* Space around the box */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: #f1f2f6ff; /* Optional: background color */
+    max-height: 200px;
+    height: auto;
+    box-sizing: content-box;
+    display: block;
+    text-align: center;
 }
 
 .centered-content {
