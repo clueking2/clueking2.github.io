@@ -252,10 +252,10 @@ h3 {
 .resume-section {
     border: 2px solid #466060ff; /* Border color and thickness */
     padding: 10px; /* Space between the content and the border */
-    margin: 10px 10px; /* Space around the box */
+    margin: 20px 50px 10px 50px; /* Space around the box */
     border-radius: 8px; /* Optional: rounded corners */
     background-color: #f1f2f6ff; /* Optional: background color */
-    max-height: 80vh;
+    max-height: 900px;
 }
 .value-section {
     border: 2px solid #466060ff; /* Border color and thickness */
@@ -286,7 +286,7 @@ hr {
 .centered-content {
     display: grid;
     place-items: center;  /* Centers both horizontally and vertically */
-    height: 60px;
+    height: 40px;
   }
 
 .centered-container {
