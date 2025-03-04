@@ -55,7 +55,7 @@ p {
     font-family: 'Patrick Hand';
     font-weight: 700;
     color: #0e0f19ff;
-    padding: 10px;
+    padding: 5px 10px, 10px, 10px;
 }
 
 .img-container {
