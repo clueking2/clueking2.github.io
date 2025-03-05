@@ -1,6 +1,5 @@
 
 /* Color palette
---brown-sugar: #ae6147ff;
 --zomp: #3ea38bff;
 --antiflash-white: #f1f2f6ff;
 --feldgrau: #466060ff;
@@ -9,6 +8,7 @@
 --#006F62
 */
 
+/* Fonts */
 .patrick-hand-regular {
     font-family: "Patrick Hand", cursive;
     font-weight: 400;
@@ -27,22 +27,33 @@
 }
 
 
-
+/* Basic styles for content, html, body, and headings */
 .content {
-    padding: 20px;
-    flex: 1; /* Ensures the content grows to fill space */
+  padding: 20px;
+  flex: 1; /* Ensures the content grows to fill space */
+}
+.centered-content {
+  display: grid;
+  place-items: center;  /* Centers both horizontally and vertically */
+  height: 40px;
 }
 
+.centered-container {
+display: grid;
+place-items: center;  /* Centers both horizontally and vertically */
+height: auto;  /* Adjust for flexible height */
+overflow-y: auto; /* Allow vertical scroll if necessary */
+}
 
 html, body {
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
     
 }
 
 html {
-    background: url(../images/option8.png) no-repeat center fixed;
+    background: url(../images/webbackground.png) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -61,39 +72,29 @@ body {
 }
 
 p {
-    font-family: 'Patrick Hand';
-    font-weight: 700;
-    color: #0e0f19ff;
-    padding: 5px 10px, 10px, 10px;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  color: #0e0f19ff;
+  padding: 5px 10px, 10px, 10px;
 }
-
-.img-container {
-    text-align: center;  /* Centers the image horizontally */
-}
-
-img {
-    display: block;  
-    margin: 0 auto;  /* Center image inside its container */
-}
-
 
 h1 {
-    font-family: Rock Salt;
-    font-size: 50px;
-    /* color: #0e0f19ff; */
-    text-align: center;
-    position: relative;
+  font-family: 'Rock Salt', cursive;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  margin: 0px;
 }
 
 h2 {
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
-    font-weight: 800;
-    color: #466060ff;
-    text-align: center;
-    position: relative;
-    /* text-shadow: 2px 2px rgb(61, 60, 60); */
-    text-shadow: 2px 2px rgb(209, 208, 208);
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  font-weight: 800;
+  color: #466060ff;
+  text-align: center;
+  position: relative;
+  /* text-shadow: 2px 2px rgb(61, 60, 60); */
+  text-shadow: 2px 2px rgb(209, 208, 208);
 }
 h2.special-h2,.special-h2 {
   color: rgb(67, 174, 149);
@@ -101,152 +102,161 @@ h2.special-h2,.special-h2 {
 }
 
 h3 {
-    font-family: Caveat;
-    font-size: 30px;
-    /* text-align: center; */
-    color: #D05739;
-    text-shadow: 2px 2px rgb(209, 208, 208);
-    position: relative;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  /* text-align: center; */
+  color: #D05739;
+  text-shadow: 2px 2px rgb(209, 208, 208);
+  position: relative;
 }
 
 html body h1.tagline, .tagline {
-    font-family: 'Rock Salt', cursive;
-    font-size: 80px !important;
-    color: #466060ff !important;
-    padding: 30px;
-    /* display: flex;
-    justify-content: center; */
-    text-align: left;
-    position: relative;
+  font-family: 'Rock Salt', cursive;
+  font-size: 80px !important;
+  color: #0e0f19ff !important;
+  padding: 30px;
+  /* display: flex;
+  justify-content: center; */
+  text-align: left;
+  position: relative;
+}
+
+/* Images, Icons, and Logos */
+.img-container {
+  text-align: center;  /* Centers the image horizontally */
+}
+
+img {
+  display: block;  
+  margin: 0 auto;  /* Center image inside its container */
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 } 
 .icon-container {
-    display: flex;            /* Use flexbox to align children in a row */
-    justify-content: center;  /* Optionally center the icons horizontally */
-    align-items: center;      /* Optionally center the icons vertically */
+  display: flex;            /* Use flexbox to align children in a row */
+  justify-content: center;  /* Optionally center the icons horizontally */
+  align-items: center;      /* Optionally center the icons vertically */
 }
 
 .logo {
-    position: fixed;  /* Stays in the corner even when scrolling */
-    top: 10px;        /* Distance from the top */
-    left: 10px;       /* Distance from the left */
-    width: 100px;     /* Adjust size */
-    height: auto;     /* Keeps aspect ratio */
-    z-index: 1000;    /* Ensures it stays above other elements */
+  position: fixed;  /* Stays in the corner even when scrolling */
+  top: 10px;        /* Distance from the top */
+  left: 10px;       /* Distance from the left */
+  width: 100px;     /* Adjust size */
+  height: auto;     /* Keeps aspect ratio */
+  z-index: 1000;    /* Ensures it stays above other elements */
 }
 
 
-
+/* Nav Bar */
 /* Navbar container */
 .navbar {
-    overflow: visible;
-    background-color: #0e0f19ff;
-    font-family: Caveat;
-    position: fixed;
-    top: 5px;
-    right: 30px;
-    width: auto;
-    z-index: 100;
-    display: flex; /* Change float-based layout to flexbox */
-    justify-content: flex-end; /* Align items to the right */
-    padding: 10px;
-    
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 20px;
-    color: #f1f2f6ff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    position: relative;
-    z-index: 1001;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 20px;
-    border: none;
-    outline: none;
-    color: #f1f2f6ff;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: Caveat;
-    font-weight: 700;
-    cursor: pointer;
-    /* font-family: inherit; Important for vertical align on mobile phones */
-    /* margin: 0px; Important for vertical align on mobile phones */
-  }
-  
-  /* Add a background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #3ea38bff;
-  }
-
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f2f6ff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #0e0f19ff;
-    z-index: 1002;
-    font-family: 'Patrick Hand';
-    font-weight: 700;
-    top: 100%;
-    right: 0px;
-    padding: 0px; /* Remove extra padding */
-    overflow: visible; /* Ensure the content is visible */
-    flex-direction: column; /* Ensure vertical stacking */
+  overflow: visible;
+  background-color: #0e0f19ff;
+  font-family: Caveat;
+  position: fixed;
+  top: 5px;
+  right: 30px;
+  width: auto;
+  z-index: 100;
+  display: flex; /* Change float-based layout to flexbox */
+  justify-content: flex-end; /* Align items to the right */
+  padding: 10px;
 }
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: #0e0f19ff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;  /* Ensures each item is a block-level element */
-    text-align: left;
-    font-family: 'Patrick Hand';
-    font-weight: 700;
-    width: 100%; /* Ensure links fill the width of the dropdown */
-    box-sizing: border-box;
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #f1f2f6ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
   
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+/* The dropdown container */
+.dropdown {
+  position: relative;
+  z-index: 1001;
+}
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-    
-  }
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #f1f2f6ff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Caveat;
+  font-weight: 700;
+  cursor: pointer;
+  /* font-family: inherit; Important for vertical align on mobile phones */
+  /* margin: 0px; Important for vertical align on mobile phones */
+}
+  
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #3ea38bff;
+}
 
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f2f6ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #0e0f19ff;
+  z-index: 1002;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  top: 100%;
+  right: 0px;
+  padding: 0px; /* Remove extra padding */
+  overflow: visible; /* Ensure the content is visible */
+  flex-direction: column; /* Ensure vertical stacking */
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #0e0f19ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;  /* Ensures each item is a block-level element */
+  text-align: left;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  width: 100%; /* Ensure links fill the width of the dropdown */
+  box-sizing: border-box;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+/* Buttons */
 .button {
-    width: 100px;
-    height: 40px;
-    object-fit: contain;
-    background-color: #3ea38bff;
-    color: #f1f2f6ff;
-    box-shadow: 0 8px 16px 0;
-    /* border-color: #466060ff; */
-    border-radius: 6px;
-    font-family: 'Patrick Hand';
-    font-weight: 700;
+  width: 100px;
+  height: 40px;
+  object-fit: contain;
+  background-color: #3ea38bff;
+  color: #f1f2f6ff;
+  box-shadow: 0 8px 16px 0;
+  /* border-color: #466060ff; */
+  border-radius: 6px;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
 } 
 
 .button:hover {
@@ -261,35 +271,35 @@ html body h1.tagline, .tagline {
 } 
 
 .pdf-button {
-    position: fixed;   /* Fixes the button in place */
-    top: 10px;          /* Positions it 10px from the top of the page */
-    left: 130px;  
-    width: 100px;
-    height: 40px;
-    /* object-fit: contain; */
-    background-color: #3ea38bff;
-    color: rgb(202, 202, 205);
-    box-shadow: 0 8px 16px 0;
-    /* border-color: #466060ff; */
-    border-radius: 6px;
-    font-family: 'Patrick Hand';
-    font-weight: 700;
+  position: fixed;   /* Fixes the button in place */
+  top: 10px;          /* Positions it 10px from the top of the page */
+  left: 130px;  
+  width: 100px;
+  height: 40px;
+  /* object-fit: contain; */
+  background-color: #3ea38bff;
+  color: rgb(202, 202, 205);
+  box-shadow: 0 8px 16px 0;
+  /* border-color: #466060ff; */
+  border-radius: 6px;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
 } 
 .pdf-button:hover {
-    position: fixed;   /* Fixes the button in place */
-    top: 10px;          /* Positions it 10px from the top of the page */
-    left: 130px;  
-    width: 100px;
-    height: 40px;
-    /* object-fit: contain; */
-    background-color: #ae6147ff;
-    color: #f1f2f6ff;
-    box-shadow: 0 8px 16px 0;
-    /* border-color: #466060ff; */
-    border-radius: 6px;
+  position: fixed;   /* Fixes the button in place */
+  top: 10px;          /* Positions it 10px from the top of the page */
+  left: 130px;  
+  width: 100px;
+  height: 40px;
+  /* object-fit: contain; */
+  background-color: #ae6147ff;
+  color: #f1f2f6ff;
+  box-shadow: 0 8px 16px 0;
+  /* border-color: #466060ff; */
+  border-radius: 6px;
 } 
 
-
+/* Boxes and Sections */
 .blurb {
   padding: 10px 10px 10px 10px; /* Space between the content and the border */
   margin: 10px 300px 100px 300px; /* Space around the box */
@@ -298,57 +308,49 @@ html body h1.tagline, .tagline {
   text-align: center;
   text-shadow: 2px 2px rgb(192, 190, 190);
 }
+
 .resume-header{
-    text-align: left;
+  text-align: left;
 }
+
 .resume-section {
-    border: 2px solid #466060ff; /* Border color and thickness */
-    padding: 10px; /* Space between the content and the border */
-    margin: 20px 50px 10px 50px; /* Space around the box */
-    border-radius: 8px; /* Optional: rounded corners */
-    background-color: #f1f2f6ff; /* Optional: background color */
-    max-height: 900px;
+  border: 2px solid #466060ff; /* Border color and thickness */
+  padding: 10px; /* Space between the content and the border */
+  margin: 20px 50px 10px 50px; /* Space around the box */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #f1f2f6ff; /* Optional: background color */
+  max-height: 900px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 .value-header {
-    text-align: center;
+  text-align: center;
 }
 .value-section {
-    border: 2px solid #466060ff; /* Border color and thickness */
-    padding: 1px 10px 1px 10px; /* Space between the content and the border */
-    margin: 10px 300px 100px 300px; /* Space around the box */
-    border-radius: 8px; /* Optional: rounded corners */
-    background-color: #f1f2f6ff; /* Optional: background color */
-    max-height: 200px;
-    height: auto;
-    box-sizing: content-box;
-    display: block;
-    text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  border: 2px solid #466060ff; /* Border color and thickness */
+  padding: 1px 10px 1px 10px; /* Space between the content and the border */
+  margin: 10px 300px 100px 300px; /* Space around the box */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #f1f2f6ff; /* Optional: background color */
+  max-height: 200px;
+  height: auto;
+  box-sizing: content-box;
+  display: block;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
+/* Separator Line */
 hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left:60px;
-    margin-right: 60px;
-    border-style: solid;
-    border-width: 1.5px;
-  }
-
-.centered-content {
-    display: grid;
-    place-items: center;  /* Centers both horizontally and vertically */
-    height: 40px;
-  }
-
-.centered-container {
-  display: grid;
-  place-items: center;  /* Centers both horizontally and vertically */
-  height: auto;  /* Adjust for flexible height */
-  overflow-y: auto; /* Allow vertical scroll if necessary */
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left:60px;
+  margin-right: 60px;
+  border-style: solid;
+  border-width: 1.5px;
 }
 
+/* Footer */
 .footer {
   font-family: Caveat;
   text-align: center;
@@ -358,6 +360,3 @@ hr {
   overflow-y: auto; /* Allow vertical scroll if necessary */
 }
 
-/* .gradient {
-    background: linear-gradient( #39a78e, #f1f2f6ff);
-  } */
