@@ -5,6 +5,7 @@
 --antiflash-white: #f1f2f6ff;
 --feldgrau: #466060ff;
 --rich-black: #0e0f19ff;
+--jasper: #D05739;
 --#006F62
 */
 
@@ -46,17 +47,17 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;   /* Centers the content horizontally */
-    align-items: center;
-    text-align: left;
-    flex-grow: 1; 
-    font-family: 'Patrick Hand';
-    font-weight: 700;
-    font-size: 18px;
-    color: #0e0f19ff;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* Centers the content horizontally */
+  align-items: center;
+  text-align: left;
+  flex-grow: 1; 
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  font-size: 18px;
+  color: #0e0f19ff;
+  overflow-x: hidden;
 }
 
 p {
@@ -85,27 +86,33 @@ h1 {
 }
 
 h2 {
-    font-family: Caveat;
+    font-family: 'Caveat', cursive;
     font-size: 30px;
-    font-weight: 400px;
-    color: #1FB4A3;
+    font-weight: 800;
+    color: #466060ff;
     text-align: center;
     position: relative;
-    text-shadow: 2px 2px #f1f2f6ff;
+    /* text-shadow: 2px 2px rgb(61, 60, 60); */
+    text-shadow: 2px 2px rgb(209, 208, 208);
+}
+h2.special-h2,.special-h2 {
+  color: rgb(67, 174, 149);
+  text-shadow: 2px 2px rgb(209, 208, 208);
 }
 
 h3 {
     font-family: Caveat;
     font-size: 30px;
-    color: #ae6147ff;
     /* text-align: center; */
+    color: #D05739;
+    text-shadow: 2px 2px rgb(209, 208, 208);
     position: relative;
 }
 
 html body h1.tagline, .tagline {
     font-family: 'Rock Salt', cursive;
     font-size: 80px !important;
-    color: #0e0f19ff !important;
+    color: #466060ff !important;
     padding: 30px;
     /* display: flex;
     justify-content: center; */
@@ -256,12 +263,12 @@ html body h1.tagline, .tagline {
 .pdf-button {
     position: fixed;   /* Fixes the button in place */
     top: 10px;          /* Positions it 10px from the top of the page */
-    left: 10px;  
+    left: 130px;  
     width: 100px;
     height: 40px;
     /* object-fit: contain; */
     background-color: #3ea38bff;
-    color: #f1f2f6ff;
+    color: rgb(202, 202, 205);
     box-shadow: 0 8px 16px 0;
     /* border-color: #466060ff; */
     border-radius: 6px;
@@ -271,7 +278,7 @@ html body h1.tagline, .tagline {
 .pdf-button:hover {
     position: fixed;   /* Fixes the button in place */
     top: 10px;          /* Positions it 10px from the top of the page */
-    left: 10px;  
+    left: 130px;  
     width: 100px;
     height: 40px;
     /* object-fit: contain; */
@@ -282,6 +289,15 @@ html body h1.tagline, .tagline {
     border-radius: 6px;
 } 
 
+
+.blurb {
+  padding: 10px 10px 10px 10px; /* Space between the content and the border */
+  margin: 10px 300px 100px 300px; /* Space around the box */
+  max-height: 200px;
+  height: auto;
+  text-align: center;
+  text-shadow: 2px 2px rgb(192, 190, 190);
+}
 .resume-header{
     text-align: left;
 }
@@ -307,17 +323,15 @@ html body h1.tagline, .tagline {
     box-sizing: content-box;
     display: block;
     text-align: center;
-}
-.blurb {
-    padding: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
 hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:60px;
+    margin-right: 60px;
     border-style: solid;
     border-width: 1.5px;
   }
