@@ -5,6 +5,7 @@
 --antiflash-white: #f1f2f6ff;
 --feldgrau: #466060ff;
 --rich-black: #0e0f19ff;
+--#006F62
 */
 
 .patrick-hand-regular {
@@ -36,6 +37,12 @@ html, body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
+    
+}
+
+html {
+    background: url(../images/option8.png) no-repeat center fixed;
+    background-size: cover;
 }
 
 body {
@@ -43,6 +50,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;   /* Centers the content horizontally */
     align-items: center;
+    text-align: left;
     flex-grow: 1; 
     font-family: 'Patrick Hand';
     font-weight: 700;
@@ -71,24 +79,39 @@ img {
 h1 {
     font-family: Rock Salt;
     font-size: 50px;
-    color: #0e0f19ff;
+    /* color: #0e0f19ff; */
     text-align: center;
+    position: relative;
 }
 
 h2 {
     font-family: Caveat;
     font-size: 30px;
     font-weight: 400px;
-    color: #3ea38bff;
+    color: #1FB4A3;
     text-align: center;
+    position: relative;
+    text-shadow: 2px 2px #f1f2f6ff;
 }
 
 h3 {
     font-family: Caveat;
     font-size: 30px;
     color: #ae6147ff;
+    /* text-align: center; */
+    position: relative;
 }
 
+html body h1.tagline, .tagline {
+    font-family: 'Rock Salt', cursive;
+    font-size: 80px !important;
+    color: #0e0f19ff !important;
+    padding: 30px;
+    /* display: flex;
+    justify-content: center; */
+    text-align: left;
+    position: relative;
+}
 
 .icon {
     width: 50px;
@@ -101,12 +124,21 @@ h3 {
     align-items: center;      /* Optionally center the icons vertically */
 }
 
+.logo {
+    position: fixed;  /* Stays in the corner even when scrolling */
+    top: 10px;        /* Distance from the top */
+    left: 10px;       /* Distance from the left */
+    width: 100px;     /* Adjust size */
+    height: auto;     /* Keeps aspect ratio */
+    z-index: 1000;    /* Ensures it stays above other elements */
+}
+
 
 
 /* Navbar container */
 .navbar {
     overflow: visible;
-    background-color: #466060ff;
+    background-color: #0e0f19ff;
     font-family: Caveat;
     position: fixed;
     top: 5px;
@@ -249,6 +281,10 @@ h3 {
     /* border-color: #466060ff; */
     border-radius: 6px;
 } 
+
+.resume-header{
+    text-align: left;
+}
 .resume-section {
     border: 2px solid #466060ff; /* Border color and thickness */
     padding: 10px; /* Space between the content and the border */
@@ -256,6 +292,9 @@ h3 {
     border-radius: 8px; /* Optional: rounded corners */
     background-color: #f1f2f6ff; /* Optional: background color */
     max-height: 900px;
+}
+.value-header {
+    text-align: center;
 }
 .value-section {
     border: 2px solid #466060ff; /* Border color and thickness */
@@ -279,8 +318,8 @@ hr {
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    border-style: inset;
-    border-width: 5px;
+    border-style: solid;
+    border-width: 1.5px;
   }
 
 .centered-content {
@@ -304,3 +343,7 @@ hr {
   height: auto;  /* Adjust for flexible height */
   overflow-y: auto; /* Allow vertical scroll if necessary */
 }
+
+/* .gradient {
+    background: linear-gradient( #39a78e, #f1f2f6ff);
+  } */
