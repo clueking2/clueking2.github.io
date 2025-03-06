@@ -69,6 +69,7 @@ body {
   font-size: 18px;
   color: #0e0f19ff;
   overflow-x: hidden;
+  padding: 70px;
 }
 
 p {
@@ -160,7 +161,7 @@ img {
   font-family: Caveat;
   position: fixed;
   top: 5px;
-  right: 30px;
+  right: 10px;
   width: auto;
   z-index: 100;
   display: flex; /* Change float-based layout to flexbox */
@@ -270,6 +271,32 @@ img {
     border-radius: 6px;
 } 
 
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 200px;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 .pdf-button {
   position: fixed;   /* Fixes the button in place */
   top: 10px;          /* Positions it 10px from the top of the page */
@@ -350,6 +377,70 @@ hr {
   border-width: 1.5px;
 }
 
+/* Form Container */
+.form-container {
+  background: #f1f2f6ff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: rgb(67, 174, 149);
+}
+
+/* Input Fields */
+.form-group {
+  margin-bottom: 40px;
+  text-align: left;
+}
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+  color: #466060ff;
+}
+input, textarea {
+  width: 90%;
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 10px 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+  height: 120px;
+  min-height: 100px;
+  overflow: scroll;
+}
+/* Response Message */
+#responseMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0e0f19ff;
+}
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #D05739;
+  border: none;
+  color: #f1f2f6ff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  
+}
+button:hover {
+  background: #3ea38bff;
+}
+
+
 /* Footer */
 .footer {
   font-family: Caveat;
@@ -359,4 +450,3 @@ hr {
   height: auto;  /* Adjust for flexible height */
   overflow-y: auto; /* Allow vertical scroll if necessary */
 }
-
