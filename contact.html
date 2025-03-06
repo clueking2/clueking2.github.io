@@ -30,55 +30,27 @@
 			  </div>
 			</div>
 		  </div>
-
+  <div class="form-container">
 		<h1> Contact</h1>
-
-		 
-          <div class="form-container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-    
-                <button type="submit">Send Message</button>
-            </form>
-    
-            <p id="responseMessage"></p>
-        </div>
-          
-          <script>
-          document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-          
-            const formData = new FormData(this);
-          
-            fetch("https://formsubmit.co/clairelueking@gmail.com", {
-              method: "POST",
-              body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-              document.getElementById("responseMessage").textContent = "Message sent successfully!";
-            })
-            .catch(error => {
-              document.getElementById("responseMessage").textContent = "Error sending message.";
-            });
-          
-            this.reset(); // Reset form after submission
-          });
-          </script>
+    <form action="https://formsubmit.co/clairelueking@gmail.com" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <input type="hidden" name="_next" value="https://clueking2.github.io/thankyou.html">
+      <input type="hidden" name="_subject" value="New Contact Form Submission">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Send</button>
+    </form>
+  </div>
 	
 	</body>
 	
