@@ -130,7 +130,9 @@ html body h1.tagline, .tagline {
 
 img {
   display: block;  
-  margin: 0 auto;  /* Center image inside its container */
+  margin: 0 auto;
+  width: 1000px;
+  height: 1000px;  /* Center image inside its container */
 }
 
 .icon {
@@ -393,12 +395,7 @@ textarea {
   min-height: 100px;
   overflow: scroll;
 }
-/* Response Message */
-#responseMessage {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #0e0f19ff;
-}
+
 /* Submit Button */
 button {
   width: 100%;
@@ -415,7 +412,11 @@ button {
 button:hover {
   background: #3ea38bff;
 }
-
+/* .prototype{
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+} */
 
 /* Footer */
 .footer {
