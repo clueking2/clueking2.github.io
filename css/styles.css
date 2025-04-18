@@ -252,7 +252,7 @@ img {
 /* Buttons */
 .button {
   width: 100px;
-  height: 60px;
+  height: 100px;
   object-fit: contain;
   background-color: #3ea38bff;
   color: #f1f2f6ff;
@@ -265,7 +265,7 @@ img {
 
 .button:hover {
     width: 100px;
-    height: 60px;
+    height: 100px;
     object-fit: contain;
     background-color: #ae6147ff;
     color: #f1f2f6ff;
