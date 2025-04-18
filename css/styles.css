@@ -37,7 +37,10 @@
   place-items: center;  /* Centers both horizontally and vertically */
   height: 40px;
 }
-
+.inline {
+  display: inline-block;
+  margin-right: 10px;
+}
 .centered-container {
 display: grid;
 place-items: center;  /* Centers both horizontally and vertically */
