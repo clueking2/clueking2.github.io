@@ -41,6 +41,11 @@
   display: inline-block;
   margin-right: 10px;
 }
+
+.about-text br {
+  line-height: 2; /* or add margin-bottom to spans */
+}
+
 .centered-container {
 display: grid;
 place-items: center;  /* Centers both horizontally and vertically */
