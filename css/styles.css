@@ -134,6 +134,9 @@ html body h1.tagline, .tagline {
 img {
   display: block;  
   margin: 0 auto;
+}
+
+img.large-img {
   width: 1000px;
   height: 1000px;  /* Center image inside its container */
 }
