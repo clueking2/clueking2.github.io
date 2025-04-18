@@ -43,7 +43,7 @@
 }
 
 .about-text br {
-  line-height: 2; /* or add margin-bottom to spans */
+  line-height: 5; /* or add margin-bottom to spans */
 }
 
 .centered-container {
