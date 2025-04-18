@@ -128,12 +128,8 @@ html body h1.tagline, .tagline {
 
 /* Images, Icons, and Logos */
 .img-container {
-  text-align: center;  /* Centers the image horizontally */
-}
-
-img {
-  display: block;  
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 img.large-img {
