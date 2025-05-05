@@ -152,11 +152,13 @@ img.about-img {
   width: 50px;
   height: 50px;
   object-fit: contain;
+  padding: 10px;
 } 
 .icon-container {
   display: flex;            /* Use flexbox to align children in a row */
   justify-content: center;  /* Optionally center the icons horizontally */
   align-items: center;      /* Optionally center the icons vertically */
+  padding: 5px;
 }
 
 .logo {
