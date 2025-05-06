@@ -1,33 +1,37 @@
+---
+layout: none
+title: About Me
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="./images/favicon1.png" type="image/png">
-    <title>About Me</title>
+    <title>{{ page.title | default: "Home" }} | {{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
   </head>
 	<!-- //  BODY, MAIN TEXT  // -->
 	<body>
-		<img src="./images/Logo3.png" alt="Logo" class="logo">
+		<img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
 
 		 <!-- //  NAV BAR  // -->
 		 <div class="navbar">
-			<a href="./index.html">Home</a>
-			<a href="./about.html">About</a>
-			<a href="./resume.html">Resume</a>
-			<a href="./contact.html">Contact</a>
+			<a href="{{ site.baseurl }}/index.html">Home</a>
+			<a href="{{ site.baseurl }}/about.html">About</a>
+			<a href="{{ site.baseurl }}/resume.html">Resume</a>
+			<a href="{{ site.baseurl }}/contact.html">Contact</a>
 			
 			<div class="dropdown">
 			  <button class="dropbtn">Projects</button>
 			  <div class="dropdown-content">
-				<a href="./project1.html">Project 1</a>
-				<a href="./project2.html">Project 2</a>
-				<a href="./project3.html">Project 3</a>
+				<a href="{{ site.baseurl }}/project1.html">Project 1</a>
+				<a href="{{ site.baseurl }}/project2.html">Project 2</a>
+				<a href="{{ site.baseurl }}/project3.html">Project 3</a>
 			  </div>
 			</div>
 		  </div>
@@ -76,10 +80,10 @@
 	</body>
 	
 	<!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-	<footer>
+    <footer>
 		<div class="centered-container">
-		  <p> <h3> Let's Connect. </h3><div class="icon-container"><a href="https://www.linkedin.com/in/clairelueking"> <img src = "./images/InBug-Black.png" class="icon"alt=" LinkedIn Icon"> </a>       <a href="mailto:clairelueking@gmail.com"><img src = "./images/email.png" alt="Email Icon" class = 'icon'></a><a href="https://dribbble.com/clueking" ><img src = "./images/dribble_logo.svg" alt="Dribble Logo" class = 'icon'></a>         <a href="https://github.com/clueking2" ><img src = "./images/github-mark.png" alt="GithHub Icon" class = 'icon'></a> </div></p>
+		  <p> <h3> Let's Connect. </h3><div class="icon-container"><a href="https://www.linkedin.com/in/clairelueking"> <img src = "{{ site.baseurl }}/images/InBug-Black.png" class="icon"alt=" LinkedIn Icon"> </a>       <a href="mailto:clairelueking@gmail.com"><img src = "{{ site.baseurl }}/images/email.png" alt="Email Icon" class = 'icon'></a><a href="https://dribbble.com/clueking" ><img src = "{{ site.baseurl }}/images/dribble_logo.svg"alt="Dribble Logo" class = 'icon'></a>   <a href="https://github.com/clueking2" ><img src = "{{ site.baseurl }}/images/github-mark.png" alt="GithHub Icon" class = 'icon'></a> </div></p>
 		  <p>© 2025 By Claire Lueking, All Rights Reserved. </p>
 		</div>
-	</footer>
+	  </footer>
 </html>

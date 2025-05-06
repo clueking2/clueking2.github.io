@@ -1,35 +1,39 @@
+---
+layout: none
+title: Project 2
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./images/favicon1.png" type="image/png">
-    <title>Project 2</title>
+    <title>{{ page.title | default: "Home" }} | {{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    {% seo %}
   </head>
   <body>
-    <img src="./images/Logo3.png" alt="Logo" class="logo">
+    <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
      <!-- //  NAV BAR  // -->
-     <div class="navbar">
-      <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact</a>
-        <div class="dropdown">
-          <button class="dropbtn">Projects
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="./project1.html">Project 1</a>
-            <a href="./project2.html">Project 2</a>
-            <a href="./project3.html">Project 3</a>
-          </div>
+    <div class="navbar">
+      <a href="{{ site.baseurl }}/index.html">Home</a>
+      <a href="{{ site.baseurl }}/about.html">About</a>
+      <a href="{{ site.baseurl }}/resume.html">Resume</a>
+      <a href="{{ site.baseurl }}/contact.html">Contact</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+          <a href="{{ site.baseurl }}/project1.html">Project 1</a>
+          <a href="{{ site.baseurl }}/project2.html">Project 2</a>
+          <a href="{{ site.baseurl }}/project3.html">Project 3</a>
         </div>
       </div>
+    </div>
       <h1> Social Justice Education App</h1>
       <h1> Mobile App & Responsive Website</h1>
       <h1>(Concept Work)</h1>
