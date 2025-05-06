@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./images/favicon1.png" type="image/png">
-    <title>Home</title>
+    <title>{{ page.title | default: "Home" }} | {{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
     <footer>
       <div class="centered-container">
-        <p> <h3> Let's Connect. </h3><div class="icon-container"><a href="https://www.linkedin.com/in/clairelueking"> <img src = "./images/InBug-Black.png" class="icon"alt=" LinkedIn Icon"> </a>       <a href="mailto:clairelueking@gmail.com"><img src = "./images/email.png" alt="Email Icon" class = 'icon'></a><a href="https://dribbble.com/clueking" ><img src = "./images/dribble_logo.svg" alt="Dribble Logo" class = 'icon'></a>   <a href="https://github.com/clueking2" ><img src = "./images/github-mark.png" alt="GithHub Icon" class = 'icon'></a> </div></p>
+        <p> <h3> Let's Connect. </h3><div class="icon-container"><a href="https://www.linkedin.com/in/clairelueking"> <img src = "{{ site.baseurl }}/images/InBug-Black.png" class="icon"alt=" LinkedIn Icon"> </a>       <a href="mailto:clairelueking@gmail.com"><img src = "{{ site.baseurl }}/images/email.png" alt="Email Icon" class = 'icon'></a><a href="https://dribbble.com/clueking" ><img src = "{{ site.baseurl }}/images/dribble_logo.svg"alt="Dribble Logo" class = 'icon'></a>   <a href="https://github.com/clueking2" ><img src = "{{ site.baseurl }}/images/github-mark.png" alt="GithHub Icon" class = 'icon'></a> </div></p>
         <p>© 2025 By Claire Lueking, All Rights Reserved. </p>
       </div>
     </footer>
