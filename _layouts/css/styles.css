@@ -1,0 +1,480 @@
+
+/* Color palette
+--zomp: #3ea38bff;
+--antiflash-white: #f1f2f6ff;
+--feldgrau: #466060ff;
+--rich-black: #0e0f19ff;
+--jasper: #D05739;
+--#006F62
+*/
+
+/* Fonts */
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.caveat-fonts {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Basic styles for content, html, body, and headings */
+.content {
+  padding: 20px;
+  flex: 1; /* Ensures the content grows to fill space */
+}
+.centered-content {
+  display: grid;
+  place-items: center;  /* Centers both horizontally and vertically */
+  height: 40px;
+}
+.inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.about-text br {
+  line-height: 5; /* or add margin-bottom to spans */
+}
+
+.centered-container {
+display: grid;
+place-items: center;  /* Centers both horizontally and vertically */
+height: auto;  /* Adjust for flexible height */
+overflow-y: auto; /* Allow vertical scroll if necessary */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+    
+}
+
+html {
+    background: url(../images/webbackground.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* Centers the content horizontally */
+  align-items: center;
+  text-align: left;
+  flex-grow: 1; 
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  font-size: 18px;
+  color: #0e0f19ff;
+  overflow-x: hidden;
+  padding: 70px;
+}
+
+p {
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  color: #0e0f19ff;
+  padding: 5px 10px, 10px, 10px;
+}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  margin: 0px;
+  padding: 70px;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  font-weight: 800;
+  color: #466060ff;
+  text-align: center;
+  position: relative;
+  /* text-shadow: 2px 2px rgb(61, 60, 60); */
+  text-shadow: 2px 2px rgb(209, 208, 208);
+}
+h2.special-h2,.special-h2 {
+  color: rgb(67, 174, 149);
+  text-shadow: 2px 2px rgb(209, 208, 208);
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  /* text-align: center; */
+  color: #D05739;
+  text-shadow: 2px 2px rgb(209, 208, 208);
+  position: relative;
+}
+
+html body h1.tagline, .tagline {
+  font-family: 'Rock Salt', cursive;
+  font-size: 80px !important;
+  color: #0e0f19ff !important;
+  padding: 30px;
+  /* display: flex;
+  justify-content: center; */
+  text-align: left;
+  position: relative;
+}
+
+/* Images, Icons, and Logos */
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+img.large-img {
+  width: 1000px;
+  height: 1000px;  /* Center image inside its container */
+}
+
+img.about-img {
+  display: inline;  
+  width: 300px;
+  height: 350px; 
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding: 10px;
+} 
+.icon-container {
+  display: flex;            /* Use flexbox to align children in a row */
+  justify-content: center;  /* Optionally center the icons horizontally */
+  align-items: center;      /* Optionally center the icons vertically */
+  padding: 5px;
+}
+
+.logo {
+  position: fixed;  /* Stays in the corner even when scrolling */
+  top: 10px;        /* Distance from the top */
+  left: 10px;       /* Distance from the left */
+  width: 100px;     /* Adjust size */
+  height: auto;     /* Keeps aspect ratio */
+  z-index: 1000;    /* Ensures it stays above other elements */
+}
+
+
+/* Nav Bar */
+/* Navbar container */
+.navbar {
+  overflow: visible;
+  background-color: #0e0f19ff;
+  font-family: Caveat;
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  width: auto;
+  z-index: 100;
+  display: flex; /* Change float-based layout to flexbox */
+  justify-content: flex-end; /* Align items to the right */
+  padding: 10px;
+}
+  
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #f1f2f6ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+/* The dropdown container */
+.dropdown {
+  position: relative;
+  z-index: 1001;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #f1f2f6ff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Caveat;
+  font-weight: 700;
+  cursor: pointer;
+  /* font-family: inherit; Important for vertical align on mobile phones */
+  /* margin: 0px; Important for vertical align on mobile phones */
+}
+  
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #3ea38bff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f2f6ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #0e0f19ff;
+  z-index: 1002;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  top: 100%;
+  right: 0px;
+  padding: 0px; /* Remove extra padding */
+  overflow: visible; /* Ensure the content is visible */
+  flex-direction: column; /* Ensure vertical stacking */
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #0e0f19ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;  /* Ensures each item is a block-level element */
+  text-align: left;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+  width: 100%; /* Ensure links fill the width of the dropdown */
+  box-sizing: border-box;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+/* Buttons */
+.button {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  background-color: #3ea38bff;
+  color: #f1f2f6ff;
+  box-shadow: 0 8px 16px 0;
+  /* border-color: #466060ff; */
+  border-radius: 6px;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+} 
+
+.button:hover {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    background-color: #ae6147ff;
+    color: #f1f2f6ff;
+    box-shadow: 0 8px 16px 0;
+    /* border-color: #466060ff; */
+    border-radius: 6px;
+} 
+
+.pdf-button {
+  position: fixed;   /* Fixes the button in place */
+  top: 10px;          /* Positions it 10px from the top of the page */
+  left: 130px;  
+  width: 100px;
+  height: 40px;
+  /* object-fit: contain; */
+  background-color: #3ea38bff;
+  color: rgb(202, 202, 205);
+  box-shadow: 0 8px 16px 0;
+  /* border-color: #466060ff; */
+  border-radius: 6px;
+  font-family: 'Patrick Hand';
+  font-weight: 700;
+} 
+.pdf-button:hover {
+  position: fixed;   /* Fixes the button in place */
+  top: 10px;          /* Positions it 10px from the top of the page */
+  left: 130px;  
+  width: 100px;
+  height: 40px;
+  /* object-fit: contain; */
+  background-color: #ae6147ff;
+  color: #f1f2f6ff;
+  box-shadow: 0 8px 16px 0;
+  /* border-color: #466060ff; */
+  border-radius: 6px;
+} 
+
+/* Boxes and Sections */
+.blurb {
+  padding: 10px 10px 10px 10px; /* Space between the content and the border */
+  margin: 10px 300px 100px 300px; /* Space around the box */
+  max-height: 200px;
+  height: auto;
+  text-align: center;
+  text-shadow: 2px 2px rgb(192, 190, 190);
+  display: flex;
+}
+
+.resume-header{
+  text-align: left;
+}
+
+.resume-section {
+  border: 2px solid #466060ff; /* Border color and thickness */
+  padding: 10px; /* Space between the content and the border */
+  margin: 20px 50px 10px 50px; /* Space around the box */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #f1f2f6ff; /* Optional: background color */
+  max-height: 900px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+.value-header {
+  text-align: center;
+}
+.value-section {
+  border: 2px solid #466060ff; /* Border color and thickness */
+  padding: 1px 10px 1px 10px; /* Space between the content and the border */
+  margin: 10px 300px 100px 300px; /* Space around the box */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #f1f2f6ff; /* Optional: background color */
+  max-height: 250px;
+  height: auto;
+  box-sizing: content-box;
+  display: block;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Separator Line */
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left:60px;
+  margin-right: 60px;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+/* Form Container */
+.form-container {
+  background: #f1f2f6ff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: rgb(67, 174, 149);
+}
+
+/* Input Fields */
+.form-group {
+  margin-bottom: 40px;
+  text-align: left;
+}
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+  color: #466060ff;
+}
+input, textarea {
+  width: 90%;
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 10px 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+  height: 120px;
+  min-height: 100px;
+  overflow: scroll;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #D05739;
+  border: none;
+  color: #f1f2f6ff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  
+}
+button:hover {
+  background: #3ea38bff;
+}
+/* .prototype{
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+} */
+
+/* Footer */
+.footer {
+  font-family: Caveat;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; 
+  height: auto;  /* Adjust for flexible height */
+  overflow-y: auto; /* Allow vertical scroll if necessary */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 200px;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .blurb {
+    width: 100%;
+    
+  }
+
+  .value-section{
+    width: 100%;
+    height: 100%
+  }
+}
