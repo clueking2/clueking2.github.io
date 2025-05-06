@@ -1,0 +1,89 @@
+---
+layout: none
+title: About Me
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./images/favicon1.png" type="image/png">
+    <title>{{ page.title | default: "Home" }} | {{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+  </head>
+	<!-- //  BODY, MAIN TEXT  // -->
+	<body>
+		<img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
+
+		 <!-- //  NAV BAR  // -->
+		 <div class="navbar">
+			<a href="{{ site.baseurl }}/index.html">Home</a>
+			<a href="{{ site.baseurl }}/about.html">About</a>
+			<a href="{{ site.baseurl }}/resume.html">Resume</a>
+			<a href="{{ site.baseurl }}/contact.html">Contact</a>
+			
+			<div class="dropdown">
+			  <button class="dropbtn">Projects</button>
+			  <div class="dropdown-content">
+				<a href="{{ site.baseurl }}/project1.html">Project 1</a>
+				<a href="{{ site.baseurl }}/project2.html">Project 2</a>
+				<a href="{{ site.baseurl }}/project3.html">Project 3</a>
+			  </div>
+			</div>
+		  </div>
+		  <h1> About Me</h1>
+		<!-- //  ABOUT ME  // -->
+		<div class="img-container">
+			<div class="about-img">
+				<img src="./images/headshot2.jpg" alt="Picture of Claire in professional clothing with a gray background" width="300px" height="350px">
+			</div>
+		</div>  
+
+		<div class="blurb">
+			<p class="about-text"> <span>Claire Lueking is passionate about the intersection of technology, user experience, design and cybersecurity. She thrives on problem-solving and creating seamless, user-friendly digital experiences, while also being deeply interested in building secure, trustworthy systems that protect users and data. With a deep appreciation for the outdoors and an active lifestyle, she enjoys pushing her limits through CrossFit and outdoor adventures, always seeking new challenges both physically and intellectually.</span><br> 
+			<span>She earned her Bachelor's in Integrative Physiology at the University of Colorado Boulder and is now pivoting into the tech industry by pursuing a degree in Applied Computer Science at the University of Colorado Boulder. Her passion for intuitive design and user experience emerged through coding in Python and HTML, as well as creating visually engaging designs using tools like Canva and Figma. As she’s expanded her technical skill set, Claire has developed a growing interest in cybersecurity—fascinated by how security underpins every digital interaction and plays a crucial role in user trust and experience. </span><br> 
+			<span>Claire is actively pursuing opportunities in UX/UI design, computer science, and cybersecurity, where she can combine her technical expertise with her passion for crafting engaging, secure, and user-centered experiences. To learn more about my work history, check out my <a href="./resume.html">resume</a>. Thanks for stopping by!</span></p>
+		</div>
+		<!-- <hr/> -->
+		
+		<h2> <u>My Philosophy</u> </h2>
+			<div class="value-header">
+			<h3> Be Authentic </h3>
+			</div>
+			<div class="value-section">	
+				<p> Authenticity is essential in every aspect of design.</p>
+				<p> This principle guides the decision-making process at each stage, ensuring that design choices align with values and vision. </p>
+				<p>Not every design will resonate with everyone, so it is crucial to stay focused on what truly matters, being genuine. </p>
+			</div>	
+			
+			<div class="value-header">
+			<h3> Be Curious </h3>
+			</div>
+			<div class="value-section">	
+				<p> Curiosity is a key asset.</p>
+				<p> It fosters creative thinking when approaching problems and seeking solutions. </p>
+				<p>This helps to enable the exploration of a broader range of possibilities to effectively address design challenges.</p>
+			</div>
+			<div class="value-header">
+				<h3> Be Empathetic </h3>
+			</div>
+			<div class="value-section">
+				<p> Empathy is the foundation of meaninful connections.</p> 
+				<p> By truly listening to others we create a space where collaboration feels safe and ideas can grow. </p>
+				<p>Without empathy, trust fades, leaving users and designers without the tools they need to create impactful experiences together.</p>
+			</div>
+	
+	</body>
+	
+	<!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+		<div class="centered-container">
+		  <p> <h3> Let's Connect. </h3><div class="icon-container"><a href="https://www.linkedin.com/in/clairelueking"> <img src = "{{ site.baseurl }}/images/InBug-Black.png" class="icon"alt=" LinkedIn Icon"> </a>       <a href="mailto:clairelueking@gmail.com"><img src = "{{ site.baseurl }}/images/email.png" alt="Email Icon" class = 'icon'></a><a href="https://dribbble.com/clueking" ><img src = "{{ site.baseurl }}/images/dribble_logo.svg"alt="Dribble Logo" class = 'icon'></a>   <a href="https://github.com/clueking2" ><img src = "{{ site.baseurl }}/images/github-mark.png" alt="GithHub Icon" class = 'icon'></a> </div></p>
+		  <p>© 2025 By Claire Lueking, All Rights Reserved. </p>
+		</div>
+	  </footer>
+</html>
