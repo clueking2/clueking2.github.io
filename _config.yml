@@ -18,14 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Claire Lueking
-email: clairelueking@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Explore the professional UX design portfolio of Claire Lueking — showcasing user-centered design, intuitive interfaces, and impactful digital experiences. Featuring case studies, design process insights, and interactive prototypes
+title: "Claire Lueking's Portfolio"
+email: "clairelueking@gmail.com"
+author: "Claire Lueking"
+description: "Applied Computer Science Student & UI/UX Designer"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://clueking2.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+url: "https://clueking2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin: "https://www.linkedin.com/in/clairelueking"
+github: "https://github.com/clueking2"
+dribbble: "https://dribbble.com/clueking2"
 
 # Build settings
 theme: null
