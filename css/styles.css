@@ -205,10 +205,11 @@ img.about-img {
   height: auto;  
   margin: 0 auto;  
 }
+
 img.side-images {
   display: inline-flex;
-  width: 400px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
   padding: 5px;
 }
 
