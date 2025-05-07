@@ -1,0 +1,129 @@
+---
+layout: none
+title: Project 1
+description: "Claire Lueking Portfolio Project 1"
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/favicon1.png" type="image/png">
+    <title>{{ page.title | default: "Home" }} | {{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    {% seo %}
+  </head>
+  <body>
+    <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
+     <!-- //  NAV BAR  // -->
+    <div class="navbar">
+      <a href="{{ site.baseurl }}/index.html">Home</a>
+      <a href="{{ site.baseurl }}/about.html">About</a>
+      <a href="{{ site.baseurl }}/resume.html">Resume</a>
+      <a href="{{ site.baseurl }}/contact.html">Contact</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+          <a href="{{ site.baseurl }}/project1.html">Fin: A Finance App and Website</a>
+          <a href="{{ site.baseurl }}/project2.html">Project 2</a>
+          <a href="{{ site.baseurl }}/project3.html">Project 3</a>
+        </div>
+      </div>
+    </div>
+    <h1> Fin: A Finance App</h1>
+    <h1> Mobile App & Responsive Website</h1>
+    <h1>(Concept Work)</h1>
+    <!-- <p>Coming Soon </p> -->
+
+      <h2> Project Overview </h2>
+      <div style="display: flex; align-items: center;">
+        <h3> <strong>Roles: </strong></h3>
+        <p> UX Designer & Researcher</p>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <h3> <strong>Timeline: </strong></h3>
+        <p> 8 weeks</p>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <h3> <strong>Tools: </strong></h3>
+        <p> Figma, Tablet, Pen & Paper</p>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <h3> <strong>Summary: </strong></h3>
+        <p> Many people new to personal finance felt overwhelmed and stuck between not knowing where to start and trying to make confident financial decisions. I led the UX design of Fin, a cross-platform experience designed to gently guide users through the early stages of financial education and planning. This case study explores how a foundation of curiosity and empathy helped reveal the deeper needs beneath the frustration—ultimately leading to a solution that values clarity, trust, and meaningful learning over complexity.</p>
+      </div>
+      
+      <h2> Problem Statement </h2>
+        <p> Users struggle to balance time between their obligations, learning, and personal life. To support them, the mobile app and website have to be fast, intuitive, and flexible that makes financial planning feel simple, stress-free, and worthwhile.</p>
+        <p><strong>Goals:</strong> 1. Respect Users' Time 2. Make Learning Personal 3. Simplify 4. Empower</p>
+      
+      <h2> Design Solutions </h2>
+        <h3> Design Process</h3>
+          <h4> Empathize</h4>
+            <p> User research was conducted with participants aged 20 to 50, capturing not only their words but also their body language and tone to uncover genuine feelings and priorities. Through empathy maps and personas, I identified that personal finance was not always a top concern; instead, users viewed money primarily as a tool to live their lives the way they want.This insight guided the creation of user journey maps, illustrating how different personas engage with financial education tools and their emotional journey along the way.</p> 
+            <p><strong>Key Insight:</strong> Users prioritize life experiences, using money as a tool to do the things in life they love to do.</p>
+          
+          <h4> Define</h4>
+            <p>Many individuals, whether students, professionals, or caregivers, struggle to balance their responsibilities, personal well-being, and future aspirations. They need tools or support systems that help them manage their time, finances, and goals efficiently, so they can live fulfilling lives while maintaining the relationships and careers that matter most to them.</p>
+
+          <h4> Ideate</h4>
+            <p>For Fin, I prioritized a consistent and accessible user experience across both mobile and web platforms:</p>
+              <ul>
+                <li><strong>Color Palette:</strong> A cohesive blend of green, black, and white was chosen to align with Fin's branding, ensuring visual consistency across all screens.</li>
+                <li><strong>Seamless Experience:</strong> Mobile and web interfaces were designed to mirror each other closely, reducing friction and maintaining brand familiarity.</li>
+                <li><strong>Neutral Language:</strong> Clear, neutral wording was used for explanations and buttons to resonate with a broad audience, especially given the sensitive nature of personal finance.</li>
+                <li><strong>Accessibility First:</strong> Fin includes dark mode, adjustable text size, and larger buttons to accommodate diverse user needs. Key screens also feature screen reader annotations to support visually impaired users.</li>
+                </ul>
+              <p><strong>Why Mobile First?</strong> I began with mobile design, anticipating that solving for smaller screens would streamline the transition to a more complex desktop layout. When designing the website interface, the goal was to keep it simple and consistent with the mobile version while staying true to Fin's branding.</p>
+
+          <h4> Prototype</h4>
+            <p>Check out the low-fidelity prototypes here:</p>
+              <p><strong>Mobile:</strong></p><!-- EMBEDD MOBILE LOWFI PROTOTYPE HERE -->
+              <p><strong>Website:</strong></p><!-- EMBEDD LOWFI WEb Prototype HERE -->
+              <p>These prototypes were refined through multiple usability testing sessions, focusing on improving accessibility and smoothing out user pain points. Feedback was quickly implemented to enhance the experience.</p>
+              <p>Key Issues and Fixes:</p>
+                <ul>
+                  <li><strong>Menu Icons:</strong> Added icons from Google's Material Design library to make navigation more intuitive and consistent.</li>
+                  <li><strong>Game Content Clarity:</strong> Reworded game instructions for better flow and understanding.</li>
+                  <li><strong>Content Overload:</strong> Reduced excessive header images to minimize scrolling and make information easier to find.</li>
+                </ul>
+
+          <h4> Test</h4>
+            <p> I ran unmoderated usability studies with 5 people each time to gain user feedback and insight into the designs to iterate through the design process to improve upon the current designs.</p> 
+            <p>Big Takeaways From Testing:</p>
+              <ul>
+                <li>Users were generally satisfied with the functionality and usability of both the app and website.</li>
+                <li>While it's unlikely that every user will be fully satisfied with the design, it's essential to prioritize common feedback to guide future improvements to the products.</li>
+              </ul> 
+      <h2> Final Solution</h2>
+          <p><strong>Mobile App Design:</strong></p> <!-- EmBED FINAL MOBILE -->
+          <p><strong>Website Design:</strong></p> <!-- EmBED FINAL WEbsite -->
+      <h2>Impact</h2>
+        <ul>
+          <li>Users were generally satisfied with functionality and usability of the app and website, with 80% of users selecting 4/5 ratings or higher for these categories.</li> 
+          <li>User Quotes:</li>
+          <ul>
+            <li>"The user flow is easy to understand and clear." - Study Participant E (Website)</li>
+            <li>"The learning path looks really fun and reminds me of the fun times playing Candy Land." - Study Participant B (Mobile)</li>
+          </ul>
+        </ul>
+      
+      <h2> Takeaways & Next Steps</h2>
+        <h4>Takeaways</h4>
+          <p>This project reminded me that UX is as much about learning as it is about usability. Leading with curiosity and empathy allowed me to design solutions that did more than complete tasks—they encouraged genuine engagement and personal growth.</p>
+          <p>Looking back, I would have prioritized involving neurodiverse users earlier in the design process. Their insights during testing revealed important accessibility considerations that would have enriched the design had they been included from the start. </p>
+
+        <h4>Next Steps</h4>
+          <ul>
+            <li><strong>Expand Accessibility Options: </strong> Enhance the settings page for deeper customization to better support diverse user needs. </li>
+            <li><strong>Improve Visual Clarity: </strong>Refine the spending donut chart for better discoverability and more intuitive understanding of financial habits.</li>
+            <li><strong>Streamlined Developer Handoff: </strong>Use well-structured design components and annotations to ensure a smooth, efficient transition to development.</li>
+          </ul>
+        <p> </p>
+  </body>
+  </html>
