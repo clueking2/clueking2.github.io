@@ -218,6 +218,13 @@ img.side-images {
   padding: 5px;
 }
 
+img.top-work {
+  display: inline-flex;
+  width: 500px;
+  height: auto;
+  padding: 5px;
+}
+
 
 
 
