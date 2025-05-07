@@ -170,6 +170,12 @@ img.about-img {
   z-index: 1000;    /* Ensures it stays above other elements */
 }
 
+.mockupset1 {
+  display: inline;  
+  width: 300px;
+  height: 350px;
+}
+
 
 /* Nav Bar */
 /* Navbar container */
