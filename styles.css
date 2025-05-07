@@ -84,7 +84,8 @@ p {
   font-family: 'Patrick Hand';
   font-weight: 700;
   color: #0e0f19ff;
-  padding: 5px; 
+  padding: 5px;
+  margin: 5px;
 }
 
 h1 {
@@ -93,7 +94,7 @@ h1 {
   text-align: center;
   position: relative;
   margin: 0px;
-  padding: 40px;
+  padding: 20px;
 }
 
 h2 {
