@@ -178,12 +178,13 @@ img.about-img {
 }
 
 .figma-embed {
-  position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 600px;
+  height: 800px; 
   margin: 0 auto;
+  border-radius: 12px; 
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .figma-embed iframe {
@@ -191,6 +192,7 @@ img.about-img {
   height: 100%;
   border: none;
 }
+
 
 
 
@@ -500,4 +502,16 @@ button:hover {
     width: 100%;
     height: 100%
   }
+}
+
+@media screen and (max-width: 768px) {
+  .mockupset1 {
+    max-width: 100%;
+  }
+
+  .figma-embed {
+    height: 500px;  /* Smaller height on mobile */
+  }
+
+  
 }
