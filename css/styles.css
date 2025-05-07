@@ -206,9 +206,9 @@ img.about-img {
   margin: 0 auto;  
 }
 .side-images {
-  display: inline;
-  width: 200px;
-  height: 400px;
+  display: inline-flex;
+  width: 400px;
+  height: 600px;
   padding: 5px;
 }
 
