@@ -113,6 +113,7 @@ h2 {
   position: relative;
   /* text-shadow: 2px 2px rgb(61, 60, 60); */
   text-shadow: 2px 2px rgb(209, 208, 208);
+  /* padding: 5px; */
 }
 h2.special-h2,.special-h2 {
   color: rgb(67, 174, 149);
@@ -147,6 +148,7 @@ h4 {
   position: relative;
   /* text-shadow: 2px 2px rgb(61, 60, 60); */
   text-shadow: 2px 2px rgb(209, 208, 208);
+  padding: 3px;
 }
 
 html body h1.tagline, .tagline {
