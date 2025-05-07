@@ -176,6 +176,12 @@ img.about-img {
   height: 350px;
 }
 
+.figma-embed {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 1100px;
+}
+
 
 /* Nav Bar */
 /* Navbar container */
