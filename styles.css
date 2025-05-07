@@ -94,7 +94,7 @@ h1 {
   text-align: center;
   position: relative;
   margin: 0px;
-  padding: 20px;
+  padding: 10px;
 }
 
 h2 {
@@ -220,7 +220,7 @@ img.side-images {
 
 img.top-work {
   display: inline-flex;
-  width: 500px;
+  width: 300px;
   height: auto;
   padding: 5px;
 }
