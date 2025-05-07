@@ -205,7 +205,7 @@ img.about-img {
   height: auto;  
   margin: 0 auto;  
 }
-.side-images {
+img.side-images {
   display: inline-flex;
   width: 400px;
   height: 600px;
