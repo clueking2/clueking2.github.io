@@ -130,9 +130,19 @@ h3 {
 
 h4 {
   font-family: 'Caveat', cursive !important;
-  font-size: 20px !important;
+  font-size: 28px !important;
   font-weight: 800;
   color: #466060ff;
+  text-align: center;
+  position: relative;
+  /* text-shadow: 2px 2px rgb(61, 60, 60); */
+  text-shadow: 2px 2px rgb(209, 208, 208);
+}
+h4 {
+  font-family: 'Caveat', cursive !important;
+  font-size: 25px !important;
+  font-weight: 800;
+  color: #0e0f19ff !important;
   text-align: center;
   position: relative;
   /* text-shadow: 2px 2px rgb(61, 60, 60); */
@@ -194,6 +204,11 @@ img.about-img {
   max-width: 800px;  
   height: auto;  
   margin: 0 auto;  
+}
+.side-images {
+  width: 400px;
+  height: 600px;
+  padding: 5px;
 }
 
 
