@@ -519,8 +519,11 @@ button:hover {
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
-  .centered-container {
-      grid-template-columns: 1fr 1fr;
+  .tagline {
+      font-size: 48px;
+  }
+  .blurb, .value-section, .resume-section {
+      max-width: 600px;
   }
 }
 
@@ -595,21 +598,59 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  .navbar a {
-      padding: 10px;
-      font-size: 18px;
+  .tagline {
+      font-size: 28px;
   }
 
   .blurb, .value-section, .resume-section {
       margin: 5px;
-      padding: 10px;
+      padding: 15px;
   }
 }
+
 
 @media (min-width: 769px) {
   .hamburger {
       display: none;
   }
+}
+
+/* Content Adjustments */
+.content {
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 64px;
+  margin-bottom: 20px;
+  color: var(--zomp);
+  font-family: 'Rock Salt', cursive;
+}
+
+.centered-container {
+  display: grid;
+  gap: 20px;
+}
+
+/* Responsive Sections */
+.blurb, .value-section, .resume-section {
+  background-color: var(--antiflash-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--rich-black);
+  color: var(--antiflash-white);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
 }
 
 /* Content Adjustments */
