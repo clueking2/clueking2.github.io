@@ -503,7 +503,28 @@ button:hover {
 }
 
 /* Mobile Responsive */
+@media (max-width: 1024px) {
+  .centered-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 768px) {
+  .centered-container {
+    grid-template-columns: 1fr;
+}
+.navbar {
+    flex-direction: column;
+    align-items: center;
+}
+/* .centered-container {
+  grid-template-columns: 1fr;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: center;
+}
   .navbar {
     top: 10px;
     right: 10px;
@@ -525,7 +546,7 @@ button:hover {
 
   .nav-links.active {
     display: flex;
-  }
+  } */
 
   .blurb {
     width: 100%;
@@ -535,6 +556,18 @@ button:hover {
   .value-section{
     width: 100%;
     height: 100%
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+      padding: 10px;
+      font-size: 18px;
+  }
+
+  .blurb, .value-section, .resume-section {
+      margin: 5px;
+      padding: 10px;
   }
 }
 
