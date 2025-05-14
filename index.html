@@ -28,13 +28,13 @@ layout: none
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   </head>
   <body class="home">
-    <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
     <!-- //  NAV BAR  // -->
     <div class="navbar">
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+      <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <a href="{{ site.baseurl }}/index.html">Home</a>
       <a href="{{ site.baseurl }}/about.html">About</a>
@@ -93,16 +93,14 @@ layout: none
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
     
-        if (hamburger && navLinks) {
-          hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-          });
-        }
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
       });
-    </script>
+    </script>    
     
   </body>
 </html>
