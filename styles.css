@@ -550,7 +550,17 @@ button:hover {
 }
 
 .hamburger {
-  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f1f2f6ff;
+  transition: 0.3s;
 }
 
 .navbar {
