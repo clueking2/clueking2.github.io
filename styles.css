@@ -194,6 +194,7 @@ img.about-img {
   width: 100px;     /* Adjust size */
   height: auto;     /* Keeps aspect ratio */
   z-index: 1000;    /* Ensures it stays above other elements */
+  justify-content: flex-start;
 }
 /* Logo */
 .logo a {
@@ -261,16 +262,21 @@ img.top-work {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 30px;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
-.nav-links {
+/* Common section styling */
+.navbar-section {
+  flex: 1;
   display: flex;
-  gap: 20px;
+  align-items: center;
 }
 
+.nav-links {
+  justify-content: center;
+  gap: 30px;
+}
 .nav-links a {
   color: #f1f2f6ff;
   text-decoration: none;
@@ -357,12 +363,12 @@ img.top-work {
 
 /* Hamburger Menu - Mobile Only */
 .hamburger {
+  justify-content: flex-end;
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
 }
-
 .hamburger span {
   width: 25px;
   height: 3px;
@@ -572,7 +578,7 @@ button:hover {
   right: 20px;
   background-color: #0e0f19ff;
   flex-direction: column;
-  width: 200px;
+  padding: 10px;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
