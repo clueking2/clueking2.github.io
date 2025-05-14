@@ -261,10 +261,23 @@ img.top-work {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 15px 20px;
   z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-  
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f1f2f6ff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -346,14 +359,15 @@ img.top-work {
 .hamburger {
   display: none;
   flex-direction: column;
+  gap: 5px;
   cursor: pointer;
-  gap: 4px;
 }
 
 .hamburger span {
   width: 25px;
   height: 3px;
   background-color: #f1f2f6ff;
+  border-radius: 2px;
 }
 
 /* Buttons */
@@ -535,18 +549,6 @@ button:hover {
   overflow-y: auto; /* Allow vertical scroll if necessary */
 }
 
-/* Nav links (default desktop) */
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #f1f2f6ff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-}
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
@@ -566,13 +568,13 @@ button:hover {
 .nav-links {
   display: none;
   position: absolute;
-  top: 60px;
-  right: 30px;
+  top: 60px; /* just below the navbar */
+  right: 20px;
   background-color: #0e0f19ff;
   flex-direction: column;
-  padding: 10px;
+  width: 200px;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links.active {
