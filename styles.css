@@ -328,14 +328,15 @@ img.top-work {
 .hamburger {
   display: none;
   flex-direction: column;
-  cursor: pointer;
   gap: 5px;
+  cursor: pointer;
 }
 
-.hamburger div {
+.hamburger span {
   width: 25px;
   height: 3px;
-  background-color: var(--antiflash-white);
+  background-color: #f1f2f6ff;
+  transition: 0.3s;
 }
 
 /* Buttons */
@@ -550,17 +551,7 @@ button:hover {
 }
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #f1f2f6ff;
-  transition: 0.3s;
+  display: flex;
 }
 
 .navbar {
