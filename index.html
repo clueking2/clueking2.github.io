@@ -70,6 +70,17 @@ layout: none
           <h3>My Work</h3>
           <a href="https://clueking2.github.io/FinAppandWebsite.html"><img src="{{ site.baseurl }}/images/thumbnailfin.png" class="top-work" alt="Fin: A Finance App and Website Project"></a>
           <p> More Coming Soon</p>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const hamburger = document.querySelector(".hamburger");
+              const navLinks = document.querySelector(".nav-links");
+          
+              hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+              });
+            });
+          </script>
+          
         </main>
       </div>
     </div>
