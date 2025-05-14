@@ -29,13 +29,13 @@ layout: none
   </head>
   <body class="home">
     <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
     <!-- //  NAV BAR  // -->
     <div class="navbar">
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <a href="{{ site.baseurl }}/index.html">Home</a>
       <a href="{{ site.baseurl }}/about.html">About</a>
       <a href="{{ site.baseurl }}/resume.html">Resume</a>
@@ -74,17 +74,6 @@ layout: none
           <h3>My Work</h3>
           <a href="https://clueking2.github.io/FinAppandWebsite.html"><img src="{{ site.baseurl }}/images/thumbnailfin.png" class="top-work" alt="Fin: A Finance App and Website Project"></a>
           <p> More Coming Soon</p>
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const hamburger = document.querySelector(".hamburger");
-              const navLinks = document.querySelector(".nav-links");
-          
-              hamburger.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-              });
-            });
-          </script>
-          
         </main>
       </div>
     </div>
@@ -102,6 +91,19 @@ layout: none
         <p>© 2025 By Claire Lueking, All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+    
+        if (hamburger && navLinks) {
+          hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+    
   </body>
 </html>
 
