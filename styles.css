@@ -233,7 +233,7 @@ img.top-work {
 
 /* Nav Bar */
 /* Navbar container */
-.navbar {
+/* .navbar {
   overflow: visible;
   background-color: #0e0f19ff;
   font-family: Caveat;
@@ -242,10 +242,24 @@ img.top-work {
   right: 10px;
   width: auto;
   z-index: 100;
-  display: flex; /* Change float-based layout to flexbox */
-  justify-content: flex-end; /* Align items to the right */
-  padding: 10px;
+  display: flex; 
+  justify-content: flex-end; 
+} */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;                     /* Ensures navbar starts from left */
+  right: 0;                    /* Ensures navbar stretches fully */
+  width: 100%;                 /* Full width across the page */
+  background-color: #0e0f19ff;
+  font-family: "Caveat", cursive;
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
 }
+
   
 /* Links inside the navbar */
 .navbar a {
