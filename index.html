@@ -111,18 +111,17 @@ layout: none
         const dropbtn = document.querySelector(".dropbtn");
         
         // Toggle menu when hamburger is clicked
-        hamburger.addEventListener("click", () => {
+        hamburger.addEventListener("click", function(e) {
+          e.stopPropagation(); // Prevent event bubbling
           hamburger.classList.toggle("active");
           navLinks.classList.toggle("active");
         });
         
         // Handle dropdown on mobile
-        dropdown.addEventListener("click", function(e) {
+        dropbtn.addEventListener("click", function(e) {
           if (window.innerWidth <= 768) {
-            // Only prevent default if clicking the button directly (not its children)
-            if (e.target === dropbtn) {
-              e.preventDefault();
-            }
+            e.preventDefault();
+            e.stopPropagation(); // Prevent triggering parent click handlers
             dropdown.classList.toggle("active");
           }
         });
