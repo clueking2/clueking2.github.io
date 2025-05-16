@@ -191,8 +191,6 @@ img.about-img {
   position: fixed;  /* Stays in the corner even when scrolling */
   top: 10px;        /* Distance from the top */
   left: 10px;       /* Distance from the left */
-  width: 70px;     /* Adjust size */
-  /* height: auto; */
   z-index: 1000;    /* Ensures it stays above other elements */
   justify-content: flex-start;
 }
@@ -299,6 +297,8 @@ img.top-work {
   display: flex;
   gap: 30px;
   align-items: center;
+  text-align: center;
+  left: 50%;
 }
 
 .nav-links a {
@@ -568,6 +568,9 @@ button:hover {
     margin: 10px auto;
     max-width: 90%;
   }
+  .logo img {
+    width: 80px;     
+  }
 }
 
 @media (max-width: 768px) {
@@ -576,7 +579,7 @@ button:hover {
   }
 
   .logo img {
-    width: 40px;     
+    width: 60px;     
   }
 
   .hamburger {
@@ -711,6 +714,9 @@ button:hover {
 
 
 @media (min-width: 769px) {
+  .logo img {
+    width: 50px;    
+  }
   .hamburger {
     display: none;
   }
