@@ -192,16 +192,22 @@ img.about-img {
   top: 10px;        /* Distance from the top */
   left: 10px;       /* Distance from the left */
   width: 100px;     /* Adjust size */
-  height: auto;     /* Keeps aspect ratio */
+  /* height: auto; */
   z-index: 1000;    /* Ensures it stays above other elements */
   justify-content: flex-start;
 }
+
+.logo img {
+  width: 100px;       
+  height: auto;       
+  transition: width 0.3s ease; 
+}
 /* Logo */
-.logo a {
+/* .logo a {
   color: #f1f2f6ff;
   text-decoration: none;
   font-size: 24px;
-}
+} */
 
 .mockupset1 {
   width: 600%;  
@@ -568,6 +574,11 @@ button:hover {
   .centered-container {
     grid-template-columns: 1fr;
   }
+
+  .logo img {
+    width: 70px;     
+  }
+
   .hamburger {
     display: flex;
   }
@@ -784,6 +795,10 @@ button:hover {
 @media screen and (max-width: 768px) {
   .mockupset1 {
     max-width: 100%;
+  }
+
+  .logo img {
+    width: 50px;    
   }
 
   .figma-embed {
