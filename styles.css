@@ -191,7 +191,7 @@ img.about-img {
   position: fixed;  /* Stays in the corner even when scrolling */
   top: 10px;        /* Distance from the top */
   left: 10px;       /* Distance from the left */
-  width: 100px;     /* Adjust size */
+  width: 70px;     /* Adjust size */
   /* height: auto; */
   z-index: 1000;    /* Ensures it stays above other elements */
   justify-content: flex-start;
@@ -576,7 +576,7 @@ button:hover {
   }
 
   .logo img {
-    width: 70px;     
+    width: 40px;     
   }
 
   .hamburger {
