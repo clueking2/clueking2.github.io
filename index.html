@@ -30,17 +30,17 @@ layout: none
   <body class="home">
     <!-- //  NAV BAR  // -->
     <div class="navbar">
-      <div class="navbar-section logo">
+      <div class="navbar-section">
         <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
       </div>
 
-      <div class="navbar-section hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <div class="navbar-section nav-links" id="navLinks">
+      <div class="nav-links" id="navLinks">
         <a href="{{ site.baseurl }}/index.html">Home</a>
         <a href="{{ site.baseurl }}/about.html">About</a>
         <a href="{{ site.baseurl }}/resume.html">Resume</a>
@@ -102,18 +102,45 @@ layout: none
       </div>
     </footer>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function() {
+        // Elements
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.getElementById("navLinks");
         const dropdown = document.querySelector(".dropdown");
-    
+        const dropdownContent = document.getElementById("projectsDropdown");
+        
+        // Toggle menu on hamburger click
         hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
           navLinks.classList.toggle("active");
         });
-    
+        
+        // Handle dropdown on mobile
         dropdown.addEventListener("click", (e) => {
-          e.stopPropagation();
-          dropdown.classList.toggle("active");
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownContent.style.display = 
+              dropdownContent.style.display === "block" ? "none" : "block";
+          }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!hamburger.contains(e.target) && 
+              !navLinks.contains(e.target) && 
+              navLinks.classList.contains("active")) {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+          }
+        });
+        
+        // Close menu when window is resized
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 768) {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+            dropdownContent.style.display = "";
+          }
         });
       });
     </script>
