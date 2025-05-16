@@ -257,7 +257,8 @@ img.top-work {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0e0f19ff;
+  /* background-color: #0e0f19ff; */
+  background-color: #3ea38bff;
   font-family: "Caveat", cursive;
   display: flex;
   justify-content: space-between;
@@ -278,7 +279,7 @@ img.top-work {
   gap: 30px;
 }
 .nav-links a {
-  color: #f1f2f6ff;
+  color: #0e0f19ff;
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
@@ -288,7 +289,7 @@ img.top-work {
 .navbar a {
   float: left;
   font-size: 20px;
-  color: #f1f2f6ff;
+  color: #0e0f19ff;
   text-align: center;
   font-size: 18px;
   padding: 10px;
@@ -306,7 +307,7 @@ img.top-work {
   font-size: 20px;
   border: none;
   outline: none;
-  color: #f1f2f6ff;
+  color: #0e0f19ff;
   padding: 14px 16px;
   background-color: inherit;
   font-family: Caveat;
@@ -318,7 +319,7 @@ img.top-work {
   
 /* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #3ea38bff;
+  background-color: #f1f2f6ff;
 }
 
 /* Dropdown content (hidden by default) */
@@ -372,6 +373,8 @@ img.top-work {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  position: absolute;
+  right: 20px;
 }
 .hamburger span {
   width: 25px;
@@ -573,31 +576,33 @@ button:hover {
 
 @media (max-width: 768px) {
   .centered-container {
-  grid-template-columns: 1fr;
-}
-.nav-links {
-  display: none;
-  position: absolute;
-  top: 60px; /* just below the navbar */
-  right: 20px;
-  background-color: #0e0f19ff;
-  flex-direction: column;
-  padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+    grid-template-columns: 1fr;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* just below the navbar */
+    right: 20px;
+    background-color: #0e0f19ff;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 1001;
+    width: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
 
-.nav-links.active {
-  display: flex;
-}
+  .nav-links.active {
+    display: flex;
+  }
 
-.hamburger {
-  display: flex;
-}
+  .hamburger {
+    display: flex;
+  }
 
   .blurb {
-    width: 100%;
-    
+      width: 100%;
+      
   }
 
   .value-section{
