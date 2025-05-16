@@ -374,6 +374,7 @@ img.top-work {
   gap: 5px;
   cursor: pointer;
   position: absolute;
+  z-index: 1001;
   right: 20px;
 }
 .hamburger span {
@@ -587,7 +588,7 @@ button:hover {
     flex-direction: column;
     padding: 10px;
     border-radius: 6px;
-    z-index: 1001;
+    z-index: 1002;
     width: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
