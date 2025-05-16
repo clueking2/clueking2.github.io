@@ -274,7 +274,7 @@ img.top-work {
 }
 
 .nav-links {
-  justify-content: center;
+  display: flex;
   gap: 30px;
 }
 .nav-links a {
@@ -290,7 +290,8 @@ img.top-work {
   font-size: 20px;
   color: #f1f2f6ff;
   text-align: center;
-  padding: 14px 16px;
+  font-size: 18px;
+  padding: 10px;
   text-decoration: none;
 }
   
@@ -323,7 +324,7 @@ img.top-work {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f1f2f6ff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px #0e0f19ff;
@@ -340,7 +341,7 @@ img.top-work {
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #0e0f19ff;
-  padding: 12px 16px;
+  padding: 10px;
   text-decoration: none;
   display: block;  /* Ensures each item is a block-level element */
   text-align: left;
@@ -355,6 +356,10 @@ img.top-work {
   background-color: #ddd;
 }
 
+.dropdown.active .dropdown-content {
+  display: flex;
+}
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
@@ -363,7 +368,6 @@ img.top-work {
 
 /* Hamburger Menu - Mobile Only */
 .hamburger {
-  justify-content: flex-end;
   display: none;
   flex-direction: column;
   gap: 5px;

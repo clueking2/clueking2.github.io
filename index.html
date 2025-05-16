@@ -33,11 +33,19 @@ layout: none
       <div class="navbar-section logo">
         <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
       </div>
+
+      <div class="navbar-section hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div class="navbar-section nav-links" id="navLinks">
         <a href="{{ site.baseurl }}/index.html">Home</a>
         <a href="{{ site.baseurl }}/about.html">About</a>
         <a href="{{ site.baseurl }}/resume.html">Resume</a>
         <a href="{{ site.baseurl }}/contact.html">Contact</a>
+
         <div class="dropdown">
           <button class="dropbtn">Projects</button>
           <div class="dropdown-content">
@@ -45,13 +53,9 @@ layout: none
             <a href="{{ site.baseurl }}/project2.html">Project 2</a>
             <a href="{{ site.baseurl }}/project3.html">Project 3</a>
           </div>
-          <div class="navbar-section hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
       </div>
+    </div>
       
 
       
@@ -101,14 +105,18 @@ layout: none
       document.addEventListener("DOMContentLoaded", function () {
         const hamburger = document.getElementById("hamburger");
         const navLinks = document.getElementById("navLinks");
+        const dropdown = document.querySelector(".dropdown");
     
         hamburger.addEventListener("click", () => {
           navLinks.classList.toggle("active");
         });
+    
+        dropdown.addEventListener("click", (e) => {
+          e.stopPropagation();
+          dropdown.classList.toggle("active");
+        });
       });
     </script>
-       
-    
   </body>
 </html>
 
