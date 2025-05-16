@@ -240,7 +240,7 @@ img.top-work {
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
+  height: 20px;
   cursor: pointer;
   z-index: 1002;
   position: relative;
@@ -554,13 +554,13 @@ button:hover {
   .nav-links {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 20px;
     background-color: #3ea38bff;
     flex-direction: column;
     width: 100%;
     max-width: 250px;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     gap: 10px;
@@ -574,10 +574,15 @@ button:hover {
   .nav-links a {
     width: 100%;
   }
+
+  .nav-links.show {
+    display: flex;
+  }
   
   /* Dropdown adjustments for mobile */
   .dropdown {
     width: 100%;
+    position: relative;
   }
   
   .dropdown .dropbtn {
@@ -601,7 +606,7 @@ button:hover {
   
   /* Override hover behavior on mobile */
   .dropdown:hover .dropdown-content {
-    display: none;
+    display: block;
   }
   
   .dropdown.active .dropdown-content {
