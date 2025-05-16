@@ -712,7 +712,14 @@ button:hover {
 
 @media (min-width: 769px) {
   .hamburger {
-      display: none;
+    display: none;
+  }
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
   }
 }
 
