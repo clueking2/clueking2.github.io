@@ -373,7 +373,7 @@ img.top-work {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f2f6ff;
+  background-color: #3ea38bff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -439,6 +439,7 @@ img.top-work {
 .blurb {
   padding: 10px; /* Space between the content and the border */
   margin: 10px auto 100px auto; /* Space around the box */
+  border: 2px solid #466060ff;
   max-width: 800px;
   width: calac(100% - 40px);
   height: auto;
