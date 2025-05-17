@@ -596,9 +596,6 @@ button:hover {
     width: 80px;     
   }
 
-  .project-wrapper, .skill-section {
-    grid-template-columns: 1fr; /* Stacks vertically */
-  }
 }
 
 @media (max-width: 768px) {
@@ -751,10 +748,6 @@ button:hover {
     width: 95%; /* Adjusts to smaller screen */
     margin: 10px auto;
   }
-
-  .project-wrapper {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 480px) {
@@ -762,11 +755,6 @@ button:hover {
   .work-item, 
   .education-item {
     padding: 8px;
-  }
-
-  .project-wrapper, 
-  .skill-section {
-    grid-template-columns: 1fr;
   }
 
   .resume-section,
