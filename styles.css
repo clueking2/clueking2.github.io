@@ -306,7 +306,7 @@ img.top-work {
 .nav-links a {
   color: #0e0f19ff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
   padding: 10px;
   font-family: 'Caveat', cursive;
   font-weight: 700;
@@ -339,7 +339,7 @@ img.top-work {
 }
 
 .dropdown .dropbtn {
-  font-size: 18px;
+  font-size: 30px;
   border: none;
   outline: none;
   color: #0e0f19ff;
