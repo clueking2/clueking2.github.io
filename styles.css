@@ -449,7 +449,7 @@ img.top-work {
 }
 
 .resume-section {
-  background-color:#f1f2f6ff;
+  background-color:#f1f2f6ff !important;
   border: 2px solid #466060ff; 
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -458,6 +458,8 @@ img.top-work {
   width: 90%;
   max-width: 1000px;
   overflow: hidden;
+  z-index: 0;
+  position: relative;
 }
 .value-header {
   text-align: center;
@@ -781,10 +783,10 @@ button:hover {
 
   .pdf-button {
     top: 60px;        /* Lower for visibility */
-    right: 15px;      /* Fits better on small screens */
+    right: 10px;      /* Fits better on small screens */
     width: 90px;      /* Further scaled down */
     height: 35px;
-    line-height: 35px;
+    /* line-height: 35px; */
     font-size: 0.9em; /* Slightly smaller font */
   }
 
