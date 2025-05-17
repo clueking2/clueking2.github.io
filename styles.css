@@ -427,9 +427,9 @@ img.top-work {
   cursor: pointer;
   z-index: 1001;                 
   transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 40px;   /* Vertically center text */
+  white-space: nowrap; /* Prevent text wrap */
+  cursor: pointer;
 } 
 .pdf-button:hover {
   background-color: #3ea38bff;
@@ -774,10 +774,10 @@ button:hover {
   .pdf-button {
     top: 60px;        /* Lower for visibility */
     right: 10px;      /* Fits better on small screens */
-    width: 90px;      /* Further scaled down */
-    height: 35px;
-    /* line-height: 35px; */
-    font-size: 0.9em; /* Slightly smaller font */
+    min-width: 80px;      /* Further scaled down */
+    /* height: 35px; */
+    line-height: 35px;
+    font-size: 14px; /* Slightly smaller font */
   }
 
   .blurb {
