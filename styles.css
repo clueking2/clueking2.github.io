@@ -788,7 +788,7 @@ button:hover {
     right: 15px;      /* Fits better on small screens */
     width: 90px;      /* Further scaled down */
     height: 35px;
-    line-height: 35px;
+    /* line-height: 35px; */
     font-size: 0.9em; /* Slightly smaller font */
   }
 
