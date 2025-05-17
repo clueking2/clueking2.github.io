@@ -437,13 +437,16 @@ img.top-work {
 
 /* Boxes and Sections */
 .blurb {
-  padding: 10px 10px 10px 10px; /* Space between the content and the border */
-  margin: 10px 300px 100px 300px; /* Space around the box */
-  max-height: 200px;
+  padding: 10px; /* Space between the content and the border */
+  margin: 10px auto 100px auto; /* Space around the box */
+  max-width: 800px;
+  width: calac(100% - 40px);
   height: auto;
   text-align: center;
   text-shadow: 2px 2px rgb(192, 190, 190);
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .resume-header{
@@ -665,8 +668,8 @@ button:hover {
   }
 
   .blurb {
-      width: 100%;
-      
+    max-width: 100%;
+    width: calc(100% - 20px);
   }
 
   .value-section{
