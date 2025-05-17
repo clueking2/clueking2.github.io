@@ -427,7 +427,6 @@ img.top-work {
   cursor: pointer;
   z-index: 1001;                 
   transition: all 0.3s ease;
-  line-height: 40px;   /* Vertically center text */
   white-space: nowrap; /* Prevent text wrap */
   cursor: pointer;
 } 
