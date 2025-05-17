@@ -91,8 +91,6 @@ description: "About Claire Lueking's Values and Design Philosophy"
 				<p>Without empathy, trust fades, leaving users and designers without the tools they need to create impactful experiences together.</p>
 			</div>
 	
-	</body>
-	
 	<!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
     <footer>
 		<div class="centered-container">
@@ -106,4 +104,52 @@ description: "About Claire Lueking's Values and Design Philosophy"
 		  <p>© 2025 By Claire Lueking, All Rights Reserved.</p>
 		</div>
 	</footer>
+	<script>
+		// JavaScript for hamburger menu functionality
+		document.addEventListener("DOMContentLoaded", function() {
+		  // Get elements
+		  const hamburger = document.getElementById("hamburger");
+		  const navLinks = document.getElementById("navLinks");
+		  const dropdown = document.querySelector(".dropdown");
+		  const dropbtn = document.querySelector(".dropbtn");
+		  
+		  // Toggle menu when hamburger is clicked
+		  hamburger.addEventListener("click", function(e) {
+			e.stopPropagation(); // Prevent event bubbling
+			hamburger.classList.toggle("active");
+			navLinks.classList.toggle("active");
+		  });
+		  
+		  // Handle dropdown on mobile
+		  dropbtn.addEventListener("click", function(e) {
+			if (window.innerWidth <= 768) {
+			  e.preventDefault();
+			  e.stopPropagation(); // Prevent triggering parent click handlers
+			  dropdown.classList.toggle("active");
+			}
+		  });
+		  
+		  // Close menu when clicking outside
+		  document.addEventListener("click", function(e) {
+			// If click is outside hamburger and nav links
+			if (!hamburger.contains(e.target) && 
+				!navLinks.contains(e.target) && 
+				navLinks.classList.contains("active")) {
+			  hamburger.classList.remove("active");
+			  navLinks.classList.remove("active");
+			  dropdown.classList.remove("active");
+			}
+		  });
+		  
+		  // Close menu when resizing to desktop
+		  window.addEventListener("resize", function() {
+			if (window.innerWidth > 768) {
+			  hamburger.classList.remove("active");
+			  navLinks.classList.remove("active");
+			  dropdown.classList.remove("active");
+			}
+		  });
+		});
+	  </script>
+	</body>
 </html>
