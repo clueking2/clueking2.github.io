@@ -378,7 +378,7 @@ img.top-work {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color: #f1f2f6ff;
+  background-color: #3ea38bff;
 }
 
 /* Buttons */
@@ -408,9 +408,8 @@ img.top-work {
 
 .pdf-button {
   position: fixed;   
-  top: 80px;          
-  /* left: 130px; */
-  right: 30px;   
+  top: 100px;          
+  left: 30px;   
   width: 120px;
   height: 45px;
   background-color: #3ea38bff;
@@ -420,7 +419,6 @@ img.top-work {
   font-family: 'Patrick Hand';
   font-weight: 700;
   text-align: center;
-  line-height: 45px;
   cursor: pointer;
   z-index: 1001;                 
   transition: all 0.3s ease;
