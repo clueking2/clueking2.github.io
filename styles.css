@@ -592,8 +592,8 @@ button:hover {
     display: none;
     position: absolute;
     top: 50px;
-    /* right: 20px; */
-    left: 0;
+    right: 20px;
+    /* left: 0; */
     background-color: #3ea38bff;
     flex-direction: column;
     width: 100%;
@@ -719,7 +719,7 @@ button:hover {
   }
 
   img.logo {
-    width: 40px;
+    width: 60px;
   }
 }
 
