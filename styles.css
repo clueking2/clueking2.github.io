@@ -250,7 +250,7 @@ img.top-work {
   cursor: pointer;
   z-index: 1002;
   position: relative;
-  right: 50px;
+  /* right: 50px; */
 }
 
 .hamburger span {
