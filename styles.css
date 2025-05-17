@@ -415,7 +415,7 @@ img.top-work {
   position: fixed;   
   top: 100px;          
   left: 15px;   
-  min-width: 100px;
+  width: 100px;
   height: 45px;
   background-color: #3ea38bff;
   color: rgb(202, 202, 205);
