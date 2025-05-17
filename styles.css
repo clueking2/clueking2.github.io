@@ -171,7 +171,7 @@ img.large-img {
 img.about-img {
   display: inline;  
   width: 300px;
-  height: 350px; 
+  height: auto; 
 }
 
 .icon {
@@ -658,6 +658,11 @@ button:hover {
     display: block !important;
   }
 
+  img.about-img {
+    display: inline;  
+    width: 200px;
+    height: auto; 
+  }
 
   .blurb {
       width: 100%;
