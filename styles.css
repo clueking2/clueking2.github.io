@@ -410,7 +410,7 @@ img.top-work {
   position: fixed;   
   top: 100px;          
   left: 15px;   
-  width: 120px;
+  width: 100px;
   height: 45px;
   background-color: #3ea38bff;
   color: rgb(202, 202, 205);
@@ -444,7 +444,17 @@ img.top-work {
   box-sizing: border-box;
 }
 
-.resume-header{
+.content-wrapper {
+  background-color: white;         /* White background for the entire section */
+  border-radius: 8px;              /* Rounded corners */
+  padding: 20px;                   /* Padding inside the section */
+  margin: 20px auto;               /* Centered on the page */
+  width: 90%;                      /* Responsive width */
+  max-width: 1000px;               /* Maximum width */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.resume-header {
   text-align: left;
 }
 
@@ -453,10 +463,8 @@ img.top-work {
   padding: 15px; 
   margin: 20px auto; 
   border-radius: 8px; 
-  background-color: #f1f2f6ff; /* Optional: background color */
   width: 90%;
   max-width: 1000px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
   overflow: hidden;
 }
 .value-header {
@@ -487,8 +495,6 @@ img.top-work {
 .skill-section div {
   border-radius: 6px;
   padding: 10px;
-  /* background-color: #ffffff; */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .work-item,
@@ -496,8 +502,6 @@ img.top-work {
   margin-bottom: 15px;
   border-radius: 6px;
   padding: 10px;
-  /* background-color: #ffffff; */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Separator Line */
