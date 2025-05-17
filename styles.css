@@ -409,7 +409,7 @@ img.top-work {
 .pdf-button {
   position: fixed;   
   top: 100px;          
-  left: 30px;   
+  left: 15px;   
   width: 120px;
   height: 45px;
   background-color: #3ea38bff;
@@ -449,29 +449,55 @@ img.top-work {
 }
 
 .resume-section {
-  border: 2px solid #466060ff; /* Border color and thickness */
-  padding: 10px; /* Space between the content and the border */
-  margin: 20px 50px 10px 50px; /* Space around the box */
-  border-radius: 8px; /* Optional: rounded corners */
+  border: 2px solid #466060ff; 
+  padding: 15px; 
+  margin: 20px auto; 
+  border-radius: 8px; 
   background-color: #f1f2f6ff; /* Optional: background color */
-  max-height: 900px;
+  width: 90%;
+  max-width: 1000px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  overflow: hidden;
 }
 .value-header {
   text-align: center;
 }
 .value-section {
-  border: 2px solid #466060ff; /* Border color and thickness */
-  padding: 1px 10px 1px 10px; /* Space between the content and the border */
-  margin: 10px 300px 100px 300px; /* Space around the box */
-  border-radius: 8px; /* Optional: rounded corners */
+  border: 2px solid #466060ff; 
+  padding: 15px; 
+  margin: 20px auto;
   background-color: #f1f2f6ff; /* Optional: background color */
-  max-height: 250px;
-  height: auto;
-  box-sizing: content-box;
-  display: block;
+  /* box-sizing: content-box;
+  display: block; */
+  width: 90%;
+  max-width: 1000;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  border-radius: 8px;
+}
+
+.project-wrapper,
+.skill-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.project-item, 
+.skill-section div {
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-item,
+.education-item {
+  margin-bottom: 15px;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Separator Line */
@@ -570,6 +596,10 @@ button:hover {
   }
   img.logo {
     width: 80px;     
+  }
+
+  .project-wrapper, .skill-section {
+    grid-template-columns: 1fr; /* Stacks vertically */
   }
 }
 
@@ -717,9 +747,35 @@ button:hover {
     height: 40px;
     line-height: 40px;
   }
+
+  .resume-section,
+  .value-section {
+    width: 95%; /* Adjusts to smaller screen */
+    margin: 10px auto;
+  }
+
+  .project-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
+  .project-item, 
+  .work-item, 
+  .education-item {
+    padding: 8px;
+  }
+
+  .project-wrapper, 
+  .skill-section {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-section,
+  .value-section {
+    width: 100%;
+  }
+
   .tagline {
       font-size: 28px;
   }
