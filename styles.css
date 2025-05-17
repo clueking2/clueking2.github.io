@@ -407,32 +407,28 @@ img.top-work {
 } 
 
 .pdf-button {
-  position: fixed;   /* Fixes the button in place */
-  top: 10px;          /* Positions it 10px from the top of the page */
-  left: 130px;  
-  width: 100px;
-  height: 40px;
-  /* object-fit: contain; */
+  position: fixed;   
+  top: 80px;          
+  /* left: 130px; */
+  right: 30px;   
+  width: 120px;
+  height: 45px;
   background-color: #3ea38bff;
   color: rgb(202, 202, 205);
-  box-shadow: 0 8px 16px 0;
-  /* border-color: #466060ff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   font-family: 'Patrick Hand';
   font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  z-index: 1001;                 
+  transition: all 0.3s ease;
 } 
 .pdf-button:hover {
-  position: fixed;   /* Fixes the button in place */
-  top: 10px;          /* Positions it 10px from the top of the page */
-  left: 130px;  
-  width: 100px;
-  height: 40px;
-  /* object-fit: contain; */
-  background-color: #ae6147ff;
-  color: #f1f2f6ff;
-  box-shadow: 0 8px 16px 0;
-  /* border-color: #466060ff; */
-  border-radius: 6px;
+  background-color: #3ea38bff;
+  color: #0e0f19ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 } 
 
 /* Boxes and Sections */
@@ -662,6 +658,14 @@ button:hover {
     display: block !important;
   }
 
+  .pdf-button {
+    top: 70px;        /* Slightly adjusted for smaller header height */
+    right: 20px;      /* Pulled in for smaller screens */
+    width: 100px;     /* Scales down */
+    height: 40px;
+    line-height: 40px;
+  }
+
   img.about-img {
     display: inline;  
     width: 200px;
@@ -709,10 +713,11 @@ button:hover {
   }
 
   .pdf-button {
-    left: 100px;
-    top: 60px;
-    width: 80px;
-    height: 35px;
+    top: 70px;        /* Slightly adjusted for smaller header height */
+    right: 20px;      /* Pulled in for smaller screens */
+    width: 100px;     /* Scales down */
+    height: 40px;
+    line-height: 40px;
   }
 }
 
@@ -725,11 +730,12 @@ button:hover {
   }
 
   .pdf-button {
-    left: 60px;
-    top: 60px;
-    font-size: 12px;
-    width: 70px;
-    height: 30px;
+    top: 60px;        /* Lower for visibility */
+    right: 15px;      /* Fits better on small screens */
+    width: 90px;      /* Further scaled down */
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9em; /* Slightly smaller font */
   }
 
   .blurb {
