@@ -19,23 +19,37 @@ description: "Contact Claire Lueking"
   </head>
 	<!-- //  BODY, MAIN TEXT  // -->
 	<body>
-		<img src="./images/Logo3.png" alt="Logo" class="logo">
       <!-- //  NAV BAR  // -->
-    <div class="navbar">
-      <a href="{{ site.baseurl }}/index.html">Home</a>
-      <a href="{{ site.baseurl }}/about.html">About</a>
-      <a href="{{ site.baseurl }}/resume.html">Resume</a>
-      <a href="{{ site.baseurl }}/contact.html">Contact</a>
-      
-      <div class="dropdown">
-        <button class="dropbtn">Projects</button>
-        <div class="dropdown-content">
-          <a href="{{ site.baseurl }}/FinAppandWebsite.html">Fin: A Finance App and Website</a>
-          <a href="{{ site.baseurl }}/project2.html">Project 2</a>
-          <a href="{{ site.baseurl }}/project3.html">Project 3</a>
+      <div class="navbar">
+        <div class="navbar-section">
+          <a href="{{ site.baseurl }}/index.html">
+            <img src="{{ site.baseurl }}/images/Logo3.png" alt="Logo" class="logo">
+          </a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="{{ site.baseurl }}/index.html">Home</a>
+          <a href="{{ site.baseurl }}/about.html">About</a>
+          <a href="{{ site.baseurl }}/resume.html">Resume</a>
+          <a href="{{ site.baseurl }}/contact.html">Contact</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+              <a href="{{ site.baseurl }}/FinAppandWebsite.html">Fin: A Finance App and Website</a>
+              <a href="{{ site.baseurl }}/project2.html">Project 2</a>
+              <a href="{{ site.baseurl }}/project3.html">Project 3</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
       <h1> Contact</h1>
         <p> Please reach out over the social links at the bottom of the page, or through the form below if you want to get in touch.</p>
   <div class="form-container">
