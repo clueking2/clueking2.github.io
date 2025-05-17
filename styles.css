@@ -466,7 +466,7 @@ img.top-work {
   border: 2px solid #466060ff; 
   padding: 15px; 
   margin: 20px auto;
-  background-color: #f1f2f6ff; /* Optional: background color */
+  /* background-color: #f1f2f6ff; Optional: background color */
   /* box-sizing: content-box;
   display: block; */
   width: 90%;
@@ -487,7 +487,7 @@ img.top-work {
 .skill-section div {
   border-radius: 6px;
   padding: 10px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -496,7 +496,7 @@ img.top-work {
   margin-bottom: 15px;
   border-radius: 6px;
   padding: 10px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
