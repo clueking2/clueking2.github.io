@@ -189,7 +189,7 @@ img.about-img {
 
 .logo {
   position: fixed;  /* Stays in the corner even when scrolling */
-  top: 10px;        /* Distance from the top */
+  top: 5px;        /* Distance from the top */
   left: 10px;
   width: 80px;
   height: auto;
@@ -592,7 +592,8 @@ button:hover {
     display: none;
     position: absolute;
     top: 50px;
-    right: 20px;
+    /* right: 20px; */
+    left: 0;
     background-color: #3ea38bff;
     flex-direction: column;
     width: 100%;
@@ -602,6 +603,7 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     gap: 10px;
     align-items: flex-start;
+    z-index: 1000;
   }
   
   .nav-links.active {
@@ -610,6 +612,9 @@ button:hover {
   
   .nav-links a {
     width: 100%;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
   }
 
   .nav-links.show {
