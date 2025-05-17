@@ -33,9 +33,14 @@
   flex: 1; /* Ensures the content grows to fill space */
 }
 .centered-content {
+  position: relative;    /* to control stacking */
+  z-index: 10;           /* make sure it appears on top */
   display: grid;
-  place-items: center;  /* Centers both horizontally and vertically */
-  height: 40px;
+  place-items: center;   /* keep content centered */
+  height: auto;          /* allow height to grow with content */
+  min-height: 40px;      /* maintain minimum height */
+  margin-top: 20px;      /* space from previous section */
+  padding: 10px;          /* optional padding */
 }
 .inline {
   display: inline-block;
