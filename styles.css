@@ -181,6 +181,9 @@ img.about-img {
 
 img.image-container{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .icon {
@@ -235,7 +238,7 @@ h1.project-header {
 }
 
 img.side-images {
-  display: inline-flex;
+  display: block;
   width: 700px;
   height: auto;
   padding: 5px;
