@@ -191,6 +191,27 @@ img.image-container{
   gap: 20px;
 }
 
+.figma-embed {
+  height: 800px;
+  width: auto;
+}
+
+.figma-link-mobile {
+  display: none;
+  text-align: center; text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 800px;
+}
+
+.figma-link-website {
+  display: none;
+  text-align: center; text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 600px;
+}
+
 .icon {
   width: 50px;
   height: 50px;
@@ -613,6 +634,16 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .figma-embed {
+    display: none !important; /* Hide the embed on mobile */
+  }
+  .figma-link-mobile {
+    display: block !important; /* Show the link on mobile */
+  }
+  .figma-link-website {
+    display: block !important; /* Show the link on mobile */
+  }
+  
   .centered-container {
     grid-template-columns: 1fr;
   }
@@ -906,10 +937,4 @@ button:hover {
   .logo img {
     width: 50px;    
   }
-
-  .figma-embed {
-    height: 500px;  /* Smaller height on mobile */
-  }
-
-  
 }
