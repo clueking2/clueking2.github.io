@@ -191,14 +191,20 @@ img.image-container{
   gap: 20px;
 }
 
+.figma-container{
+  position: relative;
+}
+
 .figma-embed {
   height: 800px;
   width: auto;
+  display: block;
 }
 
 .figma-link-mobile {
   display: none;
-  text-align: center; text-decoration: none;
+  text-align: center; 
+  text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 800px;
   height: 800px;
