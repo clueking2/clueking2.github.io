@@ -441,6 +441,7 @@ img.top-work {
   padding: 10px; /* Space between the content and the border */
   margin: 10px auto 100px auto; /* Space around the box */
   border: 2px solid #466060ff;
+  background-color: #f1f2f6ff !important;
   max-width: 800px;
   width: calac(100% - 40px);
   height: auto;
@@ -475,7 +476,7 @@ img.top-work {
   border: 2px solid #466060ff; 
   padding: 15px; 
   margin: 20px auto;
-  background-color: #f1f2f6ff; 
+  background-color: #f1f2f6ff !important; 
   /* box-sizing: content-box;
   display: block; */
   width: 90%;
