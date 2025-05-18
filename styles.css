@@ -164,8 +164,13 @@ html body h1.tagline, .tagline {
 
 /* Images, Icons, and Logos */
 .img-container {
-  display: inline-flex;
-  justify-content: center;
+  /* display: inline-flex;
+  justify-content: center; */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 10px;
 }
 
 img.large-img {
@@ -238,10 +243,10 @@ h1.project-header {
 }
 
 img.side-images {
-  display: block;
-  width: 700px;
+  width: calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
+  max-width: 100%;
   height: auto;
-  padding: 5px;
+  margin-bottom: 10px;
 }
 
 img.top-work {
