@@ -726,7 +726,7 @@ button:hover {
     right: 20px;      /* Pulled in for smaller screens */
     width: 100px;     /* Scales down */
     height: 40px;
-    line-height: 40px;
+    line-height: 10px;
   }
 
   img.about-img {
@@ -775,14 +775,6 @@ button:hover {
     max-width: 95%;
   }
 
-  .pdf-button {
-    top: 70px;        /* Slightly adjusted for smaller header height */
-    right: 20px;      /* Pulled in for smaller screens */
-    width: 100px;     /* Scales down */
-    height: 40px;
-    line-height: 40px;
-  }
-
   .resume-section,
   .value-section {
     width: 95%; /* Adjusts to smaller screen */
@@ -813,8 +805,7 @@ button:hover {
     top: 60px;        /* Lower for visibility */
     right: 10px;      /* Fits better on small screens */
     min-width: 80px;      /* Further scaled down */
-    /* height: 35px; */
-    line-height: 35px;
+    line-height: 10px;
     font-size: 14px; /* Slightly smaller font */
   }
 
