@@ -477,7 +477,7 @@ img.top-work {
   border: 2px solid #466060ff;
   background-color: #f1f2f6ff !important;
   max-width: 800px;
-  width: calac(100% - 40px);
+  width: calc(100% - 40px);
   height: auto;
   text-align: center;
   text-shadow: 2px 2px rgb(192, 190, 190);
