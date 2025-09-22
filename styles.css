@@ -306,6 +306,13 @@ img.image-container-1{
   margin: 20px auto;
   width: 100%;
 }
+img.image-container-1-fin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 50%;
+}
 
 .image-container-1 img{
   display: block;
