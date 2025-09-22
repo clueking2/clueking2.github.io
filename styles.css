@@ -214,7 +214,7 @@ img.about-img {
 }
 
 img.image-container{
-  text-align: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -301,11 +301,11 @@ img.side-images {
 }
 
 img.side-images-impact {
-  width: calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
+  width: 1 1 calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
-  justify-content: center;
+  display: block;
 }
 
 img.top-work {
