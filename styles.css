@@ -177,13 +177,13 @@ html body h1.tagline, .tagline {
 
 .thumbnailcontainer {
   text-align: center;
-  margin: 20px 0;
   width: 500px;
-  height: auto
+  height: auto;
 }
 .thumbnail-img {
-  width: 500px !important;          /* Forces image to be 500px wide */
-  height: auto !important;          /* Maintains aspect ratio */
+  width: 500px; 
+  max-width: 60%;         /* Forces image to be 500px wide */
+  height: auto;          /* Maintains aspect ratio */
   display: inline-block; /* Ensures text-align centers it */
 }
 
