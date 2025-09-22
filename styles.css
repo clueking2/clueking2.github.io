@@ -304,7 +304,15 @@ img.image-container-1{
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+  width: 100%;
 }
+
+.image-container-1 img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .image-container-2-2{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
