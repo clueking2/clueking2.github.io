@@ -119,6 +119,18 @@ h2.special-h2,.special-h2 {
   text-shadow: 2px 2px rgb(209, 208, 208);
 }
 
+.case-study-link a {
+  display: inline-block; /* Allows proper centering if needed */
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 700;
+  color: #0e0f19ff;
+  text-decoration: none;
+}
+.case-study-link a:hover {
+  color: #D05739;
+}
+
 h3 {
   font-family: 'Caveat', cursive;
   font-size: 30px;
@@ -160,6 +172,11 @@ html body h1.tagline, .tagline {
   justify-content: center; */
   text-align: left;
   position: relative;
+}
+
+.thumbnailcontainer {
+  text-align: center;
+  margin: 20px 0;
 }
 
 /* Images, Icons, and Logos */
