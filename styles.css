@@ -185,7 +185,7 @@ html body h1.tagline, .tagline {
   height: auto;
 }
 .thumbnail-img {
-  width: 500px; 
+  width: 700px; 
   max-width: 60%;         /* Forces image to be 500px wide */
   height: auto;          /* Maintains aspect ratio */
   display: inline-block; /* Ensures text-align centers it */
