@@ -98,6 +98,7 @@ h1 {
   font-family: "Rock Salt", cursive;
   font-size: 50px;
   text-align: center;
+  justify-content: center;
   position: relative;
   margin: 0px;
   padding: 10px;
