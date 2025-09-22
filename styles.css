@@ -177,6 +177,8 @@ html body h1.tagline, .tagline {
 .thumbnailcontainer {
   text-align: center;
   margin: 20px 0;
+  width: 500px;
+  height: auto
 }
 
 /* Images, Icons, and Logos */
