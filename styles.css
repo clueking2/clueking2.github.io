@@ -300,6 +300,14 @@ img.side-images {
   justify-content: center;
 }
 
+img.side-images-impact {
+  width: calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
 img.top-work {
   display: inline-flex;
   width: 300px;
