@@ -321,6 +321,14 @@ justify-items: center;
 margin: 20px auto;
 max-width: 650px;
 }
+.image-container-2-2-fin{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: 20px auto;
+  max-width: 100%;
+  }
 
 img.top-work {
   display: inline-flex;
@@ -686,7 +694,10 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .image-container.grid-2x2 {
+  .image-contianer-2-2-fin {
+    grid-template-columns: 1fr;
+  }
+  .image-container-2-2 {
     grid-template-columns: 1fr; 
   }
   img.side-images {
