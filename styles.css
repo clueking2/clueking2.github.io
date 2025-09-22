@@ -197,8 +197,9 @@ html body h1.tagline, .tagline {
   justify-content: center; */
   display: flex;
   flex-wrap: wrap; 
-  justify-content: space-between; 
-  align-items: flex-start; 
+  /* justify-content: space-between;  */
+  justify-content: center;
+  /* align-items: flex-start;  */
   gap: 10px;
 }
 
@@ -293,14 +294,6 @@ h1.project-header {
 }
 
 img.side-images {
-  width: calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  justify-content: center;
-}
-
-img.side-images-impact {
   width: 1 1 calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
   max-width: 100%;
   height: auto;
