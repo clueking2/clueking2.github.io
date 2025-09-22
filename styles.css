@@ -299,6 +299,21 @@ img.side-images {
   display: block;
 }
 
+img.img-container-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+img.img-container-2-2{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+justify-items: center;
+margin: 20px auto;
+max-width: 650px;
+}
+
 img.top-work {
   display: inline-flex;
   width: 300px;
