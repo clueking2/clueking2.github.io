@@ -311,7 +311,7 @@ img.image-container-1-fin{
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  width: 50%;
+  width: calc(50% - 5px);;
 }
 
 .image-container-1 img{
@@ -334,7 +334,7 @@ max-width: 650px;
   gap: 20px;
   justify-items: center;
   margin: 20px auto;
-  max-width: 100%;
+  width: calc(50% - 5px);;
   }
 
 img.top-work {
