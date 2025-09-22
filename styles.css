@@ -193,13 +193,11 @@ html body h1.tagline, .tagline {
 
 /* Images, Icons, and Logos */
 .img-container {
-  /* display: inline-flex;
-  justify-content: center; */
   display: flex;
   flex-wrap: wrap; 
   /* justify-content: space-between;  */
   justify-content: center;
-  /* align-items: flex-start;  */
+  align-items: center; 
   gap: 10px;
 }
 
@@ -294,7 +292,7 @@ h1.project-header {
 }
 
 img.side-images {
-  width: 1 1 calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
+  width: calc(50% - 5px); /* Each image takes up roughly half the container width, minus half the gap */
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
