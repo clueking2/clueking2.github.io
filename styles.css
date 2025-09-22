@@ -303,7 +303,7 @@ img.image-container-1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .image-container-2-2{
 display: grid;
