@@ -267,6 +267,7 @@ img.side-images {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 img.top-work {
