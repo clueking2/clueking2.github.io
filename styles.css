@@ -299,19 +299,32 @@ img.side-images {
   display: block;
 }
 
+.image-container-1-fin,
+.image-container-2-2-fin {
+  display: flex;            /* or grid if you want 2 columns */
+  justify-content: center;  /* centers children horizontally */
+  align-items: center;      /* centers children vertically */
+  flex-wrap: wrap;          /* allows wrapping on smaller screens */
+  gap: 20px;                /* spacing between images */
+  margin: 20px auto;
+  max-width: 900px;         /* controls container width */
+  width: 90%;               /* responsive width */
+}
+
+.image-container-1-fin img,
+.image-container-2-2-fin img {
+  max-width: 100%;          /* prevents overflow */
+  width: 400px;             /* optional fixed width for consistency */
+  height: auto;             /* keeps aspect ratio */
+  display: block;
+}
+
 img.image-container-1{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
   width: 100%;
-}
-img.image-container-1-fin{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-  width: calc(50% - 5px);;
 }
 
 .image-container-1 img{
@@ -328,14 +341,7 @@ justify-items: center;
 margin: 20px auto;
 max-width: 650px;
 }
-.image-container-2-2-fin{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-  margin: 20px auto;
-  width: calc(50% - 5px);;
-  }
+
 
 img.top-work {
   display: inline-flex;
