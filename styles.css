@@ -179,11 +179,11 @@ html body h1.tagline, .tagline {
   position: relative;
 }
 
-.thumbnailcontainer {
+/* .thumbnailcontainer {
   text-align: center;
   width: 500px;
   height: auto;
-}
+} */
 .thumbnail-img {
   width: 700px; 
   max-width: 60%;         /* Forces image to be 500px wide */
@@ -305,7 +305,7 @@ img.image-container-1{
   align-items: center;
   margin: 20px 0;
 }
-img.image-container-2-2{
+.image-container-2-2{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 20px;
