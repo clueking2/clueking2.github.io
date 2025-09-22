@@ -120,8 +120,12 @@ h2.special-h2,.special-h2 {
   text-shadow: 2px 2px rgb(209, 208, 208);
 }
 
+.case-study-link{
+  text-align: center;
+  margin: 20px 0;
+}
 .case-study-link a {
-  display: inline-block; /* Allows proper centering if needed */
+  display: inline-block; 
   text-align: center;
   font-family: 'Patrick Hand', cursive;
   font-weight: 700;
