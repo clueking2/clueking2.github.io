@@ -299,13 +299,13 @@ img.side-images {
   display: block;
 }
 
-img.img-container-1{
+img.image-container-1{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
-img.img-container-2-2{
+img.image-container-2-2{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 20px;
@@ -678,6 +678,12 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .image-container.grid-2x2 {
+    grid-template-columns: 1fr; 
+  }
+  img.side-images {
+    max-width: 90%;             
+  }
   .figma-container > div {
     display: none !important;
   }
