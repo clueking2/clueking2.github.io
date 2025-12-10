@@ -69,7 +69,7 @@ html, body {
 }
 
 html {
-    background: url("/images/logan-voss-0h7Foc77oow-unsplash.jpg") no-repeat center fixed;
+    background: url("./images/logan-voss-0h7Foc77oow-unsplash.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
