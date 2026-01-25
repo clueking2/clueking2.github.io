@@ -110,7 +110,8 @@ h2 {
   font-family: 'Caveat', cursive;
   font-size: 30px;
   font-weight: 800;
-  color: #466060ff;
+  /* color: #466060ff; */
+  color: #D05739;
   text-align: center;
   position: relative;
   /* text-shadow: 2px 2px rgb(61, 60, 60); */
@@ -119,7 +120,7 @@ h2 {
 }
 h2.special-h2,.special-h2 {
   color: rgb(67, 174, 149);
-  text-shadow: 2px 2px rgb(209, 208, 208);
+  /* text-shadow: 2px 2px rgb(209, 208, 208); */
 }
 
 .case-study-link{
