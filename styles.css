@@ -8,7 +8,7 @@
 --rich-black: #0e0f19ff;
 --jasper: #D05739;
 --#006F62
---experimental: #ff643d
+--experimental: rgb(230, 88, 53)
 */
 
 /* Fonts */
@@ -144,7 +144,7 @@ h3 {
   font-family: 'Caveat', cursive;
   font-size: 30px;
   /* text-align: center; */
-  color: #ff643d;
+  color: rgb(230, 88, 53);
   text-shadow: 2px 2px rgb(99, 99, 99);
   position: relative;
 }
