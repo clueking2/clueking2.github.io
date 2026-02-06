@@ -217,6 +217,12 @@ html body h1.tagline, .tagline {
   display: block;
 }
 
+.work-item span {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
 /* Images, Icons, and Logos */
 .img-container {
   display: flex;
