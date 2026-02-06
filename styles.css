@@ -195,6 +195,28 @@ html body h1.tagline, .tagline {
   display: inline-block; /* Ensures text-align centers it */
 }
 
+.work-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.work-item {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 250px;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
 /* Images, Icons, and Logos */
 .img-container {
   display: flex;
