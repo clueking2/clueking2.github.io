@@ -47,6 +47,11 @@
   margin: 20px auto;      /* space from previous section */
   padding: 10px 20px;          /* optional padding */
 }
+
+.centered-content > * {
+  width: 100%;
+}
+
 .inline {
   display: inline-block;
   margin-right: 10px;
