@@ -38,14 +38,14 @@
 .centered-content {
   /* position: relative;    /* to control stacking */
   /* z-index: 10;           make sure it appears on top */
-  display: grid;
+  /* display: grid;
   justify-items: center; 
-  /* align-items: start;  keep content centered */
+  align-items: start;   */
   /* height: auto;         allow height to grow with content */
   /* min-height: 40px; */ 
-  width: 100%;      /* maintain minimum height */
+  max-width: 1000px;      /* maintain minimum height */
   margin: 20px auto;      /* space from previous section */
-  padding: 10px 20px;          /* optional padding */
+  /* padding: 10px 20px;          optional padding */
 }
 
 .centered-content > * {
@@ -635,6 +635,11 @@ img.top-work {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
   border-radius: 8px;
 }
+.content-wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
 
 
 .project-item, 
