@@ -42,7 +42,8 @@
   justify-items: center; 
   align-items: start;   */
   /* height: auto;         allow height to grow with content */
-  /* min-height: 40px; */ 
+  /* min-height: 40px; */
+  text-align: center; 
   max-width: 1000px;      /* maintain minimum height */
   margin: 20px auto;      /* space from previous section */
   /* padding: 10px 20px;          optional padding */
@@ -212,8 +213,13 @@ html body h1.tagline, .tagline {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
+.work-grid span {
+  text-align: center;
+}
+
 
 .work-item {
   /* text-align: center;
