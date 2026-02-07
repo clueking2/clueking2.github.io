@@ -216,6 +216,12 @@ html body h1.tagline, .tagline {
   justify-content: center;
   text-align: center;
 }
+
+.work-grid {
+  justify-content: center;
+  text-align: center;
+}
+
 .work-grid span {
   text-align: center;
 }
