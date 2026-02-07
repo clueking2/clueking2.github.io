@@ -217,10 +217,15 @@ html body h1.tagline, .tagline {
   text-align: center;
 }
 
-.work-grid {
-  justify-content: center;
+h3 + .work-grid {
   text-align: center;
 }
+
+h3 + .work-grid::before {
+  content: "";
+  display: block;
+}
+
 
 .work-grid span {
   text-align: center;
