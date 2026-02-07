@@ -211,10 +211,14 @@ html body h1.tagline, .tagline {
 }
 
 .work-item {
-  text-align: center;
+  /* text-align: center;
   text-decoration: none;
   color: inherit;
-  width: 250px;
+  width: 250px; */
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .work-item img {
@@ -607,8 +611,9 @@ img.top-work {
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   padding: 20px; 
-  margin: 20px auto; 
-  width: 90%;
+  /* margin: 20px auto;  */
+  margin: 0, auto 24px;
+  width: 100%;
   max-width: 1000px;
   overflow: hidden;
   z-index: 0;
