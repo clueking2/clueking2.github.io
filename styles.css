@@ -31,10 +31,10 @@
 
 
 /* Basic styles for content, html, body, and headings */
-.content {
+/* .content {
   padding: 20px;
   flex: 1; /* Ensures the content grows to fill space */
-}
+/* } */
 .centered-content {
   /* position: relative;    /* to control stacking */
   /* z-index: 10;           make sure it appears on top */
@@ -202,12 +202,17 @@ html body h1.tagline, .tagline {
   display: inline-block; /* Ensures text-align centers it */
 }
 
-.work-grid {
-  display: flex;
+.work-grid .work-item {
+  /* display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 1.5rem; */
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .work-item {
@@ -585,6 +590,13 @@ img.top-work {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 } 
 
+
+main.content-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /* Boxes and Sections */
 .blurb {
   padding: 10px; /* Space between the content and the border */
@@ -619,6 +631,13 @@ img.top-work {
   z-index: 0;
   position: relative;
 }
+.resume-section .work-item {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
 .value-header {
   text-align: center;
 }
