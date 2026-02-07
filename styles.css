@@ -203,7 +203,7 @@ html body h1.tagline, .tagline {
   display: inline-block; /* Ensures text-align centers it */
 }
 
-.work-grid .work-item {
+.work-grid, .work-item {
   /* display: flex;
   justify-content: center;
   gap: 2rem;
