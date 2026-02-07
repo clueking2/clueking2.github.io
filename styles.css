@@ -39,7 +39,8 @@
   position: relative;    /* to control stacking */
   z-index: 10;           /* make sure it appears on top */
   display: grid;
-  place-items: center;   /* keep content centered */
+  justify-items: center; 
+  align-items: start;  /* keep content centered */
   height: auto;          /* allow height to grow with content */
   min-height: 40px;
   max-width: 900px;      /* maintain minimum height */
