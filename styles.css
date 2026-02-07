@@ -36,14 +36,14 @@
   flex: 1; /* Ensures the content grows to fill space */
 }
 .centered-content {
-  position: relative;    /* to control stacking */
-  z-index: 10;           /* make sure it appears on top */
+  /* position: relative;    /* to control stacking */
+  /* z-index: 10;           make sure it appears on top */
   display: grid;
   justify-items: center; 
-  align-items: start;  /* keep content centered */
+  /* align-items: start;  keep content centered */
   /* height: auto;         allow height to grow with content */
   /* min-height: 40px; */ 
-  max-width: 900px;      /* maintain minimum height */
+  width: 100%;      /* maintain minimum height */
   margin: 20px auto;      /* space from previous section */
   padding: 10px 20px;          /* optional padding */
 }
