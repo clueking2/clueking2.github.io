@@ -41,9 +41,10 @@
   display: grid;
   place-items: center;   /* keep content centered */
   height: auto;          /* allow height to grow with content */
-  min-height: 40px;      /* maintain minimum height */
-  margin-top: 20px;      /* space from previous section */
-  padding: 10px;          /* optional padding */
+  min-height: 40px;
+  max-width: 900px;      /* maintain minimum height */
+  margin: 20px auto;      /* space from previous section */
+  padding: 10px 20px;          /* optional padding */
 }
 .inline {
   display: inline-block;
