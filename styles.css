@@ -151,7 +151,7 @@ h2.special-h2,.special-h2 {
 h3 {
   font-family: 'Caveat', cursive;
   font-size: 30px;
-  /* text-align: center; */
+  text-align: center;
   color: rgb(230, 88, 53);
   text-shadow: 2px 2px rgb(99, 99, 99);
   position: relative;
